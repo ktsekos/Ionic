@@ -14,6 +14,6 @@ angular.module('starter.controllers', [])
 .controller('HotelsCtrl', function($scope) {
 })
 
-.controller('SeetingsCtrl', function($scope) {
+.controller('SettingsCtrl', function($scope) {
 });
 

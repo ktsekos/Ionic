@@ -75,7 +75,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
           controller: 'HotelsCtrl'
         }
       }
-    });
+    })
     
     .state('tab.settings', {
       url: '/settings',
