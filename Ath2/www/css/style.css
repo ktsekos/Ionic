@@ -9,6 +9,7 @@ html, body{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    color:red;
 }
 ion-nav-view, .pane, .view{
     background-color:transparent;
