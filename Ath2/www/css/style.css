@@ -23,14 +23,28 @@ h1.title{
 h2.home-header{
     font-weight:bold;
     text-align:center;
-    font-size:1.8em;
-    background-color: #004a99;
-    padding:12px;
+    font-size:4em;
+    padding:1em;
+    margin-top:1em;
 }
 
-.button.button-half{
-    width:45%;
-    margin:2.5%;
+a.button.button-half{
+    border-radius: 1em;
+    clear: none;
+    display: inline;
+    float: left;
+    font-size: 3em;
+    margin: 1em 0 0 0;
+    padding: 1em;
+    width: 100%;
+}
+
+@media screen and ( max-height: 500px ){
+    h2.home-header{
+        font-size:3em;
+        padding:1em;
+        margin-top:0;
+    }
 }
 
 h3{
@@ -40,10 +54,6 @@ h3{
     font-size:1.8em;
 }
 
-p{
-    font-size:1.4em;
-}
-
 .item {
     background-color: #fff;
     border-color: #ddd;
@@ -51,12 +61,9 @@ p{
     border-width: 1px;
     color: #666;
     font-weight:bold;
-    display: block;
-    font-size: 1.4em;
+    font-size: 1.8em;
     margin: 3px 1px;
     padding: 5px 10px;
-    position: relative;
-    z-index: 2;
 }
 .item:hover{
     background-color:#004a99;
