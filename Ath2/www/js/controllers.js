@@ -4,14 +4,19 @@ angular.module('starter.controllers', [])
 })
 
 .controller('RestaurantsCtrl', function($scope, Restaurants) {
-  $scope.restaurants = Restaurants.all();
+    $scope.restaurants = Restaurants.all();
 })
 
 .controller('RestaurantDetailCtrl', function($scope, $stateParams, Restaurants) {
-  $scope.restaurant = Restaurants.get($stateParams.restaurantId);
+    $scope.restaurant = Restaurants.get($stateParams.restaurantId);
 })
 
-.controller('HotelsCtrl', function($scope) {
+.controller('HotelsCtrl', function($scope, Hotels) {
+    $scope.hotels = Hotels.all();
+})
+
+.controller('HotelDetailCtrl', function($scope, $stateParams, Hotels) {
+    $scope.hotel = Hotels.get($stateParams.hotelId);
 })
 
 .controller('SettingsCtrl', function($scope) {
