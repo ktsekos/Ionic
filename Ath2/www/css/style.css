@@ -1,7 +1,12 @@
 html, body{
     height: 100%;
     font-size: 62.5%;
+    box-sizing: border-box;
 }
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 .background-container{
     min-height: 100%;
     width:100%;
@@ -52,6 +57,18 @@ h3{
     color:#fff;
     background-color:#004a99;
     font-size:1.8em;
+}
+
+.filtertable{
+    margin:0;
+    padding:0;
+    color:#fff;
+    font-weight:bold;
+    font-size:1.8em;
+}
+
+div.list{
+    margin-top:2em;
 }
 
 .item {

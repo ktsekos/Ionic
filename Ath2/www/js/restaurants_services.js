@@ -8,12 +8,12 @@ angular.module('starter.restaurants_services', [])
 
   // Some fake testing data
   var restaurants = [
-    { id: 0, name: 'Tortuga Food Bar', address: 'Tepeleniou 3' },
-    { id: 1, name: 'F+W', address: 'Kyprou 21' },
-    { id: 2, name: 'Vyzantino', address: 'Megistis 1' },
-    { id: 3, name: 'Buba', address: 'Parthenwnos 3 & Sofokleous' },
-    { id: 4, name: 'La Suite Lounge', address: 'Parthenwnos 3 & Sofokleous' },
-    { id: 5, name: 'Old Ithaki', address: 'Parthenwnos 3 & Sofokleous' }
+    { id: 0, name: 'Tortuga Food Bar', region: 'Kriti', address: 'Tepeleniou 3' },
+    { id: 1, name: 'F+W', region: 'Attiki', address: 'Kyprou 21' },
+    { id: 2, name: 'Vyzantino', region: 'Peloponnisos', address: 'Megistis 1' },
+    { id: 3, name: 'Buba', region: 'Attiki', address: 'Parthenwnos 3 & Sofokleous' },
+    { id: 4, name: 'La Suite Lounge', region: 'Peloponnisos', address: 'Kolonou 8' },
+    { id: 5, name: 'Old Ithaki', region: 'Sporades', address: 'Alevizatou 81' }
   ];
 
   return {

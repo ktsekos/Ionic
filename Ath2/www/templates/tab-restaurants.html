@@ -1,9 +1,25 @@
 <ion-view title="Restaurants">
-  <ion-content class="padding">
-    <ion-list>
-      <ion-item ng-repeat="restaurant in restaurants" type="item-text-wrap" href="#/tab/restaurant/{{restaurant.id}}">
-        {{restaurant.name}}, {{restaurant.address}}
-      </ion-item>
-    </ion-list>
-  </ion-content>
+    <ion-content class="padding">
+        <table width="100%" class="filtertable">
+            <tr>
+                <td>Search by restaurant name: </td>
+            </tr>
+            <tr>
+                <td><input ng-model="searchName.name"></td>
+            </tr>
+        </table>
+        <table width="100%" class="filtertable">
+            <tr>
+                <td>Search by restaurant region: </td>
+            </tr>
+            <tr>
+                <td><input ng-model="searchName.region"></td>
+            </tr>
+        </table>
+          <ion-list>
+              <ion-item ng-repeat="restaurant in restaurants | filter: searchName" type="item-text-wrap" href="#/tab/restaurant/{{restaurant.id}}">
+                  {{restaurant.name}}, {{restaurant.region}}, {{restaurant.address}}
+              </ion-item>
+          </ion-list>
+    </ion-content>
 </ion-view>

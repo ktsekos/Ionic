@@ -1,9 +1,25 @@
 <ion-view title="Hotels">
-  <ion-content class="padding">
-    <ion-list>
-      <ion-item ng-repeat="hotel in hotels" type="item-text-wrap" href="#/tab/hotel/{{hotel.id}}">
-        {{hotel.name}}, {{hotel.address}}
-      </ion-item>
-    </ion-list>
-  </ion-content>
+    <ion-content class="padding">
+        <table width="100%" class="filtertable">
+            <tr>
+                <td>Search by hotel name: </td>
+            </tr>
+            <tr>
+                <td><input ng-model="searchName.name"></td>
+            </tr>
+        </table>
+        <table width="100%" class="filtertable">
+            <tr>
+                <td>Search by hotel region: </td>
+            </tr>
+            <tr>
+                <td><input ng-model="searchName.region"></td>
+            </tr>
+        </table>
+        <ion-list ng-show="searchName">
+            <ion-item ng-repeat="hotel in hotels | filter: searchName" type="item-text-wrap" href="#/tab/hotel/{{hotel.id}}">
+                {{hotel.name}}, {{hotel.region}}, {{hotel.address}}
+            </ion-item>
+        </ion-list>
+    </ion-content>
 </ion-view>
