@@ -1,13 +1,13 @@
 <!--
-  This template loads for the 'tab.friend-detail' state (app.js)
-  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
-  The FriendsCtrl pulls data from the Friends service (service.js)
-  The Friends service returns an array of friend data
+  This template loads for the 'tab.restaurant-detail' state (app.js)
+  'restaurant' is a $scope variable created in the RestaurantsCtrl controller (controllers.js)
+  The RestaurantsCtrl pulls data from the Restaurants service (service.js)
+  The Restaurants service returns an array of restaurant data
 -->
 
-<ion-view title="{{restaurant.name}}">
+<ion-view title="{{restaurant.GrName}}">
   <ion-content has-header="true" padding="true">
-      <{{restaurant.name}}<br/>
-      {{restaurant.address}}
+      {{restaurant.GrName}}<br/>
+      {{restaurant.GrOpenPeriod}}<br/>
   </ion-content>
 </ion-view>

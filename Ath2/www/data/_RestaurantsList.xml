@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RestaurantList>
+  <Restaurants>
+    <REC_Id>7000021</REC_Id>
+    <REC_Type>R</REC_Type>
+    <AreaID>270</AreaID>
+    <Link>details.aspx?aid=270&amp;did=475&amp;rid=7000021&amp;cid=7000068</Link>
+    <D_Description>Σκόπελος</D_Description>
+    <DestinationID>475</DestinationID>
+    <ParentAreaName>Σποράδες</ParentAreaName>
+    <GrName>Παύλος</GrName>
+    <Prices>&lt;span class="price"&gt;€16-21&lt;/span&gt;</Prices>
+    <PriceFrom>16</PriceFrom>
+    <PriceTo>21</PriceTo>
+    <Score>1</Score>
+    <Degree>12.5</Degree>
+    <GrAddress>Αγνώντας&lt;br/&gt;</GrAddress>
+    <PhoneNo>24240/22409&lt;br&gt;</PhoneNo>
+    <GrOpenPeriod>Απρ.-Οκτ., καθημερινά, μεσημέρι-βράδυ</GrOpenPeriod>
+    <GreekKitchenAward />
+    <AirConditioning />
+    <LocalSpecialties>&lt;span class='restaurant-facilities rfacilities0'/&gt;</LocalSpecialties>
+    <ImportantWineList />
+    <ExcellentWineList />
+    <OutdoorsService>&lt;span class='restaurant-facilities rfacilities3'/&gt;</OutdoorsService>
+    <AttractiveView />
+    <Parking />
+    <CreditCards>&lt;span class='restaurant-facilities rfacilities8'/&gt;</CreditCards>
+    <GrText>Διαχρονική ψαροταβέρνα στο γραφικό κόλπο. Δίπλα στη θάλασσα, με μια τεράστια μυρτιά για σκιά και θέα στις ψαρόβαρκες. Θα βρείτε εξαιρετικά φρέσκα ψάρια, αστακό, αστακομακαρονάδα και μαγειρευτά. Στα συν η λευκή ταραμοσαλάτα, η σαλάτα με βραστό κρίταμο (μέχρι τα μέσα Ιουλίου) και το γλυκό τελειώμα με σαραγλάκια και το τοπικό γλυκό του κουταλιού αυγάτο. </GrText>
+    <Zip>37003</Zip>
+    <Resp_First>Αγγελικής</Resp_First>
+    <Resp_Last>Φλωρού</Resp_Last>
+    <TCAT_GRDESCR>Ψαροταβέρνα - μαγειρευτά</TCAT_GRDESCR>
+    <Tcat_Id>7000068</Tcat_Id>
+    <GrPhonetic>Παύλος</GrPhonetic>
+  </Restaurants>
+  <Restaurants>
+    <REC_Id>7000022</REC_Id>
+    <REC_Type>R</REC_Type>
+    <AreaID>270</AreaID>
+    <Link>details.aspx?aid=270&amp;did=475&amp;rid=7000022&amp;cid=7000117</Link>
+    <D_Description>Σκόπελος</D_Description>
+    <DestinationID>475</DestinationID>
+    <ParentAreaName>Σποράδες</ParentAreaName>
+    <GrName>Αγνάντι</GrName>
+    <Prices>&lt;span class="price"&gt;€13-25&lt;/span&gt;</Prices>
+    <PriceFrom>13</PriceFrom>
+    <PriceTo>25</PriceTo>
+    <Score>2</Score>
+    <Degree>13.5</Degree>
+    <GrAddress>Γλώσσα&lt;br/&gt;</GrAddress>
+    <PhoneNo>24240/33606, 33076&lt;br&gt;</PhoneNo>
+    <GrOpenPeriod>Μάιο-10 Οκτ., καθημερινά, μεσημέρι-βράδυ</GrOpenPeriod>
+    <GreekKitchenAward />
+    <URLAddress>www.agnanti-rest.gr</URLAddress>
+    <AirConditioning>&lt;span class='restaurant-facilities rfacilities7'/&gt;</AirConditioning>
+    <LocalSpecialties>&lt;span class='restaurant-facilities rfacilities0'/&gt;</LocalSpecialties>
+    <ImportantWineList />
+    <ExcellentWineList />
+    <OutdoorsService>&lt;span class='restaurant-facilities rfacilities3'/&gt;</OutdoorsService>
+    <AttractiveView />
+    <Parking />
+    <CreditCards>&lt;span class='restaurant-facilities rfacilities8'/&gt;</CreditCards>
+    <GrText>Ένα μικρό διαχρονικό διαμαντάκι στον παραδοσιακό οικισμό της Γλώσσας, σε στιλ μεταμοντέρνας ταβέρνας. Πολύ αξιόλογα και ψαγμένα παραδοσιακά πιάτα, φτιαγμένα με την πείρα του πατέρα Σταματάκη και τις ανησυχίες του γιου Νίκου. Μενού σύντομο, μέρος του οποίου ανανεώνεται τακτικά. Σαλάτα με κρίταμα και κάππαρη, κατσίκι κοκκινιστό με μυρωδικά και αγκινάρες, πίτα ανοιχτή με φρέσκες σαρδέλες, λιαστή ντομάτα και κάππαρη, αμυγδαλόπιτα με ζαμπούκο, παγωτό κανέλα. Συνεννοηθείτε εκ των προτέρων για μάγουλα ροφού στιφάδο. Η θέα εξαίσια, η μουσική παίζει διακριτικά και η λίστα κρασιών είναι η καλύτερη που συναντήσαμε στο νησί.</GrText>
+    <Zip>37003</Zip>
+    <Resp_First>Νίκου</Resp_First>
+    <Resp_Last>Σταματάκη</Resp_Last>
+    <TCAT_GRDESCR>Τοπική ελληνική κουζίνα</TCAT_GRDESCR>
+    <Tcat_Id>7000117</Tcat_Id>
+    <GrPhonetic>Αγνάντι</GrPhonetic>
+  </Restaurants>
+  <Restaurants>
+    <REC_Id>7000023</REC_Id>
+    <REC_Type>R</REC_Type>
+    <AreaID>270</AreaID>
+    <Link>details.aspx?aid=270&amp;did=475&amp;rid=7000023&amp;cid=7000108</Link>
+    <D_Description>Σκόπελος</D_Description>
+    <DestinationID>475</DestinationID>
+    <ParentAreaName>Σποράδες</ParentAreaName>
+    <GrName>Ταβέρνα Adrina Beach</GrName>
+    <Prices>&lt;span class="price"&gt;€15-25&lt;/span&gt;</Prices>
+    <PriceFrom>15</PriceFrom>
+    <PriceTo>25</PriceTo>
+    <Score>2</Score>
+    <Degree>12.5</Degree>
+    <GrAddress>Πάνορμος&lt;br/&gt;Ξεν. «Adrina Beach»&lt;br/&gt;</GrAddress>
+    <PhoneNo>24240/23373&lt;br&gt;</PhoneNo>
+    <GrOpenPeriod>25 Μαΐου-25 Σεπ., καθημερινά, μεσημέρι-βράδυ</GrOpenPeriod>
+    <GreekKitchenAward />
+    <AirConditioning />
+    <LocalSpecialties>&lt;span class='restaurant-facilities rfacilities0'/&gt;</LocalSpecialties>
+    <ImportantWineList />
+    <ExcellentWineList />
+    <OutdoorsService>&lt;span class='restaurant-facilities rfacilities3'/&gt;</OutdoorsService>
+    <AttractiveView />
+    <Parking>&lt;span class='restaurant-facilities rfacilities6'/&gt;</Parking>
+    <CreditCards>&lt;span class='restaurant-facilities rfacilities8'/&gt;</CreditCards>
+    <GrText>Στο ομώνυμο ξενοδοχείο, επάνω σε ξύλινο ντεκ,  με μίνιμαλ διακόσμηση, δίπλα στη θάλασσα, και απόλυτη σπεσιαλιτέ τη μακαρονάδα με ανοιχτή σκορπίνα. Μια σειρά καλοφτιαγμένα ελληνικά πιάτα όπως μαρουλοντολμάδες με μπακαλιάρο, μπιφτέκι γιαουρτλού και μύδια μαρινάτα εναλλάσσονται καθημερινά. Χαλαρό, ρομαντικό περιβάλλον, πολύ ευγενικό σέρβις και η υψηλή ποιότητα πρώτων υλών.  </GrText>
+    <Zip>37003</Zip>
+    <Resp_First>Μάρω / Γιάννη</Resp_First>
+    <Resp_Last>Ροδοπούλου</Resp_Last>
+    <TCAT_GRDESCR>Ταβέρνα - ελληνική &amp; διεθνής κουζίνα</TCAT_GRDESCR>
+    <Tcat_Id>7000108</Tcat_Id>
+    <GrPhonetic>Ταβέρνα Αδρινα Βεαγωωη</GrPhonetic>
+  </Restaurants>
+  <Restaurants>
+    <REC_Id>7000024</REC_Id>
+    <REC_Type>R</REC_Type>
+    <AreaID>270</AreaID>
+    <Link>details.aspx?aid=270&amp;did=475&amp;rid=7000024&amp;cid=7000008</Link>
+    <D_Description>Σκόπελος</D_Description>
+    <DestinationID>475</DestinationID>
+    <ParentAreaName>Σποράδες</ParentAreaName>
+    <GrName>Περιβόλι</GrName>
+    <Prices>&lt;span class="price"&gt;€18-24&lt;/span&gt;</Prices>
+    <PriceFrom>18</PriceFrom>
+    <PriceTo>24</PriceTo>
+    <Score>2</Score>
+    <Degree>13</Degree>
+    <GrAddress>Σκόπελος&lt;br/&gt;</GrAddress>
+    <PhoneNo>24240/23758&lt;br&gt;</PhoneNo>
+    <GrOpenPeriod>Ιούν.-Σεπ., καθημερινά, βράδυ</GrOpenPeriod>
+    <GreekKitchenAward />
+    <AirConditioning />
+    <LocalSpecialties />
+    <ImportantWineList>&lt;span class='restaurant-facilities rfacilities1'/&gt;</ImportantWineList>
+    <ExcellentWineList />
+    <OutdoorsService>&lt;span class='restaurant-facilities rfacilities3'/&gt;</OutdoorsService>
+    <AttractiveView />
+    <Parking />
+    <CreditCards />
+    <GrText>Πάνω από την πλατεία Πλατάνου, κρύβεται ένας υπέροχος κήπος με λουλουδιασμένα πυθάρια κι ένα μεγάλο μποστάνι που προμηθεύει την κουζίνα με λαχανικά και μυριστικά. Ο ιδιοκτήτης κ. Ρηγίνος άφησε τις κουζίνες των αθηναϊκών bar-restaurants κι ετοιμάζει μεσογειακά πιάτα με διαχρονικά σταθερή ποιότητα. Δοκιμάστε αρνάκι γεμιστό με μανούρι και πιπεριές Φλωρίνης, το all-time classic παστίτισιο για χορτοφάγους και χορινό ρολό με μήλα και δαμάσκηνα. Καλή λίστα κρασιών, διακριτικό σέρβις και ρομαντική ατμόσφαιρα. </GrText>
+    <Zip>37003</Zip>
+    <Resp_First>Ρηγίνου</Resp_First>
+    <Resp_Last>Γαλατσάνου</Resp_Last>
+    <TCAT_GRDESCR>Διεθνής κουζίνα</TCAT_GRDESCR>
+    <Tcat_Id>7000008</Tcat_Id>
+    <GrPhonetic>Περιβόλι</GrPhonetic>
+  </Restaurants>
+  <Restaurants>
+    <REC_Id>7000025</REC_Id>
+    <REC_Type>R</REC_Type>
+    <AreaID>270</AreaID>
+    <Link>details.aspx?aid=270&amp;did=475&amp;rid=7000025&amp;cid=7000037</Link>
+    <D_Description>Σκόπελος</D_Description>
+    <DestinationID>475</DestinationID>
+    <ParentAreaName>Σποράδες</ParentAreaName>
+    <GrName>Τέρψη</GrName>
+    <Prices>&lt;span class="price"&gt;€10-15&lt;/span&gt;</Prices>
+    <PriceFrom>10</PriceFrom>
+    <PriceTo>15</PriceTo>
+    <Score>1</Score>
+    <Degree>12</Degree>
+    <GrAddress>Σκόπελος&lt;br/&gt;Στο δρόμο για Πάνορμο (4 χλμ. από τη Χώρα)&lt;br/&gt;</GrAddress>
+    <PhoneNo>24240/22053&lt;br&gt;</PhoneNo>
+    <GrOpenPeriod>Ιούν.-15 Σεπ., καθημερινά, βράδυ. Το χειμώνα Παρ.-Σάβ. βράδυ., Κυρ. μεσημέρι</GrOpenPeriod>
+    <GreekKitchenAward />
+    <AirConditioning />
+    <LocalSpecialties />
+    <ImportantWineList />
+    <ExcellentWineList />
+    <OutdoorsService>&lt;span class='restaurant-facilities rfacilities3'/&gt;</OutdoorsService>
+    <AttractiveView />
+    <Parking>&lt;span class='restaurant-facilities rfacilities6'/&gt;</Parking>
+    <CreditCards />
+    <GrText>Ταβέρνα που λειτουργεί από το 1961, διάσημη για το ολόκληρο γεμιστό κοτόπουλο με συκωτάκια και καρύδια στον ξυλόφουρνο (κατόπιν παραγγελίας). Κρέας στα κάρβουνα, μοσχαράκι κοκκινιστό και λεμονάτο. Στα συν η τοποθεσία. Μπορεί να μη διαθέτει θέα, έχει όμως πολύ πράσινο και δροσιά.</GrText>
+    <Zip>37003</Zip>
+    <Resp_First>Δημήτρη</Resp_First>
+    <Resp_Last>Συρόπουλου</Resp_Last>
+    <TCAT_GRDESCR>Ταβέρνα - μαγειρευτά &amp; σχάρα</TCAT_GRDESCR>
+    <Tcat_Id>7000037</Tcat_Id>
+    <GrPhonetic>Τέρψη</GrPhonetic>
+  </Restaurants>
+  <Restaurants>
+    <REC_Id>7002484</REC_Id>
+    <REC_Type>R</REC_Type>
+    <AreaID>270</AreaID>
+    <Link>details.aspx?aid=270&amp;did=475&amp;rid=7002484&amp;cid=7000037</Link>
+    <D_Description>Σκόπελος</D_Description>
+    <DestinationID>475</DestinationID>
+    <ParentAreaName>Σποράδες</ParentAreaName>
+    <GrName>Αλεξάντερ</GrName>
+    <Prices>&lt;span class="price"&gt;€10-18&lt;/span&gt;</Prices>
+    <PriceFrom>10</PriceFrom>
+    <PriceTo>18</PriceTo>
+    <Score>1</Score>
+    <Degree>12</Degree>
+    <GrAddress>Σκόπελος&lt;br/&gt;</GrAddress>
+    <PhoneNo>24240/22324&lt;br&gt;</PhoneNo>
+    <GrOpenPeriod>Απρ.-10 Οκτ., καθημερινά, βράδυ. Το χειμώνα Τετ.-Σάβ. βράδυ, Κυρ. μεσημέρι-βράδυ</GrOpenPeriod>
+    <GreekKitchenAward />
+    <AirConditioning />
+    <LocalSpecialties />
+    <ImportantWineList />
+    <ExcellentWineList />
+    <OutdoorsService>&lt;span class='restaurant-facilities rfacilities3'/&gt;</OutdoorsService>
+    <AttractiveView />
+    <Parking />
+    <CreditCards>&lt;span class='restaurant-facilities rfacilities8'/&gt;</CreditCards>
+    <GrText>Όμορφη αυλή στην επάνω παλιά γειτονιά της Χώρας. Έμφαση στη σχάρα και σε δυο-τρία μαγειρευτά καθημερινά. Γευστικές αιχμές το χοιρινό με δαμάσκηνα από το περιβόλι και η παραδοσιακή σκοπελίτικη πίτα. Νόστιμα παϊδάκια στα κάρβουνα. Το χειμώνα σερβίρει σε περιποιημένη αίθουσα με τζάκι.</GrText>
+    <Zip>37003</Zip>
+    <Resp_First>Δημήτρη</Resp_First>
+    <Resp_Last>Παζαρά</Resp_Last>
+    <TCAT_GRDESCR>Ταβέρνα - μαγειρευτά &amp; σχάρα</TCAT_GRDESCR>
+    <Tcat_Id>7000037</Tcat_Id>
+    <GrPhonetic>αλεξάντερ</GrPhonetic>
+  </Restaurants>
+  <Restaurants>
+    <REC_Id>7002485</REC_Id>
+    <REC_Type>R</REC_Type>
+    <AreaID>270</AreaID>
+    <Link>details.aspx?aid=270&amp;did=475&amp;rid=7002485&amp;cid=7000062</Link>
+    <D_Description>Σκόπελος</D_Description>
+    <DestinationID>475</DestinationID>
+    <ParentAreaName>Σποράδες</ParentAreaName>
+    <GrName>Μώλος</GrName>
+    <Prices>&lt;span class="price"&gt;€15-25&lt;/span&gt;</Prices>
+    <PriceFrom>15</PriceFrom>
+    <PriceTo>25</PriceTo>
+    <Score>1</Score>
+    <Degree>12</Degree>
+    <GrAddress>Σκόπελος&lt;br/&gt;</GrAddress>
+    <PhoneNo>24240/22551&lt;br&gt;</PhoneNo>
+    <GrOpenPeriod>Όλο το χρόνο, μεσημέρι-βράδυ</GrOpenPeriod>
+    <GreekKitchenAward />
+    <AirConditioning />
+    <LocalSpecialties />
+    <ImportantWineList />
+    <ExcellentWineList />
+    <OutdoorsService>&lt;span class='restaurant-facilities rfacilities3'/&gt;</OutdoorsService>
+    <AttractiveView />
+    <Parking />
+    <CreditCards>&lt;span class='restaurant-facilities rfacilities8'/&gt;</CreditCards>
+    <GrText>Θα το βρείτε κοντά στη βορινή προβλήτα. Προσεγμένη και πεντακάθαρη κουζίνα, με τη νεότερη γενιά να προχωράει σε καινοτομίες στο μενού, διατηρώντας ταυτόχρονα και κάποια παραδοσιακά πιάτα. Έμφαση στα μαγειρευτά και στους θαλασσινούς μεζέδες. Δοκιμάστε ριγανάτο γαύρο στο φούρνο, κολοκυθοκορφάδες, κουνέλι με βερύκοκα και τσίπουρο και ρολάκια μελιτζάνας με καρύδι και ρόδι. </GrText>
+    <Zip>37003</Zip>
+    <Resp_First>Παναγιώτη</Resp_First>
+    <Resp_Last>Αστεριάδη</Resp_Last>
+    <TCAT_GRDESCR>Ταβέρνα - μαγειρευτά &amp; ψάρι</TCAT_GRDESCR>
+    <Tcat_Id>7000062</Tcat_Id>
+    <GrPhonetic>μωλος</GrPhonetic>
+  </Restaurants>
+  <Restaurants>
+    <REC_Id>7002487</REC_Id>
+    <REC_Type>R</REC_Type>
+    <AreaID>270</AreaID>
+    <Link>details.aspx?aid=270&amp;did=475&amp;rid=7002487&amp;cid=7000062</Link>
+    <D_Description>Σκόπελος</D_Description>
+    <DestinationID>475</DestinationID>
+    <ParentAreaName>Σποράδες</ParentAreaName>
+    <GrName>Ο Θωμάς</GrName>
+    <Prices>&lt;span class="price"&gt;€12-15&lt;/span&gt;</Prices>
+    <PriceFrom>12</PriceFrom>
+    <PriceTo>15</PriceTo>
+    <Score>1</Score>
+    <Degree>12</Degree>
+    <GrAddress>Λιμνοναρι&lt;br/&gt;</GrAddress>
+    <PhoneNo>24240/24460&lt;br&gt;</PhoneNo>
+    <GrOpenPeriod>25 Μαΐου-Σεπ., καθημερινά, μεσημέρι-βράδυ</GrOpenPeriod>
+    <GreekKitchenAward />
+    <AirConditioning />
+    <LocalSpecialties />
+    <ImportantWineList />
+    <ExcellentWineList />
+    <OutdoorsService>&lt;span class='restaurant-facilities rfacilities3'/&gt;</OutdoorsService>
+    <AttractiveView />
+    <Parking />
+    <CreditCards />
+    <GrText>Περιποιημένη ταβέρνα με δροσερή αυλή στην άκρη της πανέμορφης παραλίας. Μαγειρευτά, ψάρια και κρέατα στη σχάρα. Χρησιμοποιούν βιολογικό ελαιόλαδο δικής τους παραγωγής και λαχανικά από το μποστάνι, ενώ πολλά από τα κρέατα και τα τυριά προέρχονται από τα γίδια που εκτρέφουν σε κοντινή βραχονησίδα.</GrText>
+    <Zip>37003</Zip>
+    <Resp_First>Κωνσταντίνου</Resp_First>
+    <Resp_Last>Λεμονή</Resp_Last>
+    <TCAT_GRDESCR>Ταβέρνα - μαγειρευτά &amp; ψάρι</TCAT_GRDESCR>
+    <Tcat_Id>7000062</Tcat_Id>
+    <GrPhonetic>Θωμάς</GrPhonetic>
+  </Restaurants>
+  <Restaurants>
+    <REC_Id>7004480</REC_Id>
+    <REC_Type>R</REC_Type>
+    <AreaID>270</AreaID>
+    <Link>details.aspx?aid=270&amp;did=475&amp;rid=7004480&amp;cid=7000068</Link>
+    <D_Description>Σκόπελος</D_Description>
+    <DestinationID>475</DestinationID>
+    <ParentAreaName>Σποράδες</ParentAreaName>
+    <GrName>Κοράλι</GrName>
+    <Prices>&lt;span class="price"&gt;€12-18&lt;/span&gt;</Prices>
+    <PriceFrom>12</PriceFrom>
+    <PriceTo>18</PriceTo>
+    <Score>0</Score>
+    <Degree>12.5</Degree>
+    <GrAddress>Αγνώντας&lt;br/&gt;</GrAddress>
+    <PhoneNo>24240/22407&lt;br&gt;</PhoneNo>
+    <GrOpenPeriod>Πάσχα-Οκτ., καθημερινά, μεσημέρι-βράδυ</GrOpenPeriod>
+    <GreekKitchenAward />
+    <AirConditioning />
+    <LocalSpecialties>&lt;span class='restaurant-facilities rfacilities0'/&gt;</LocalSpecialties>
+    <ImportantWineList />
+    <ExcellentWineList />
+    <OutdoorsService>&lt;span class='restaurant-facilities rfacilities3'/&gt;</OutdoorsService>
+    <AttractiveView />
+    <Parking />
+    <CreditCards>&lt;span class='restaurant-facilities rfacilities8'/&gt;</CreditCards>
+    <GrText>Δίπλα στο μόλο. Εκτός από ψάρι και θαλασσινούς μεζέδες, θα βρείτε και ορισμένα μαγειρευτά εποχής. Χαρακτηριστικά πιάτα ο ροφός στιφάδο, το πιάτο του ψαρά (σαν παέγια με μύδια, θράψαλα και γαρίδες) και η αστακομακαρονάδα. Στα συν η αξιοσημείωτη για την περιοχή λίστα κρασιών και το προσεγμένο περιβάλλον. </GrText>
+    <Zip>37003</Zip>
+    <Resp_First>Δημήτρης</Resp_First>
+    <Resp_Last>Πάντου</Resp_Last>
+    <TCAT_GRDESCR>Ψαροταβέρνα - μαγειρευτά</TCAT_GRDESCR>
+    <Tcat_Id>7000068</Tcat_Id>
+    <GrPhonetic>Κοράλι</GrPhonetic>
+  </Restaurants>
+  <Restaurants>
+    <REC_Id>7005903</REC_Id>
+    <REC_Type>R</REC_Type>
+    <AreaID>270</AreaID>
+    <Link>details.aspx?aid=270&amp;did=475&amp;rid=7005903&amp;cid=7000118</Link>
+    <D_Description>Σκόπελος</D_Description>
+    <DestinationID>475</DestinationID>
+    <ParentAreaName>Σποράδες</ParentAreaName>
+    <GrName>Εστιατόριο της Άννας</GrName>
+    <Prices>&lt;span class="price"&gt;€15-25&lt;/span&gt;</Prices>
+    <PriceFrom>15</PriceFrom>
+    <PriceTo>25</PriceTo>
+    <Score>0</Score>
+    <Degree>13</Degree>
+    <GrAddress>Σκόπελος&lt;br/&gt;</GrAddress>
+    <PhoneNo>24240/24734&lt;br&gt;</PhoneNo>
+    <GrOpenPeriod>Μάιο-Οκτ., καθημερινά, βράδυ</GrOpenPeriod>
+    <GreekKitchenAward />
+    <AirConditioning />
+    <LocalSpecialties />
+    <ImportantWineList />
+    <ExcellentWineList />
+    <OutdoorsService>&lt;span class='restaurant-facilities rfacilities3'/&gt;</OutdoorsService>
+    <AttractiveView />
+    <Parking />
+    <CreditCards>&lt;span class='restaurant-facilities rfacilities8'/&gt;</CreditCards>
+    <GrText>Η συμπαθέστατη αυλή μέσα στην πόλη έχει σήμα κατατεθέν το φοίνικα και την αγαπάνε ιδιαιτέρως οι ξένοι επισκέπτες του νησιού. Η κουζίνα της Άννας είναι δημιουργική: σκοπελίτικη τυρόπιτα με φράουλες και αμύγδαλα, μικρές καπνιστές πέστροφες (τις καπνίζουν οι ίδιοι), χοιρινή μπριζόλα καπνιστή με κονφί λεμονιού, αιγαιοπελαγίτικη παέγια και κεμπάπ θαλασσινών. Για γλυκό φινάλε προτιμήστε στεγνό μπακλαβά με μέλι και καϊμάκι αλλά και φοντί σοκολάτας. </GrText>
+    <Zip>37003</Zip>
+    <Resp_First>Άννας</Resp_First>
+    <Resp_Last>Αϊβάζογλου</Resp_Last>
+    <TCAT_GRDESCR>Δημιουργική ελληνική κουζίνα</TCAT_GRDESCR>
+    <Tcat_Id>7000118</Tcat_Id>
+    <GrPhonetic>εστιατοριο της αννας</GrPhonetic>
+  </Restaurants>
+  <Restaurants>
+    <REC_Id>7005989</REC_Id>
+    <REC_Type>R</REC_Type>
+    <AreaID>270</AreaID>
+    <Link>details.aspx?aid=270&amp;did=475&amp;rid=7005989&amp;cid=7000044</Link>
+    <D_Description>Σκόπελος</D_Description>
+    <DestinationID>475</DestinationID>
+    <ParentAreaName>Σποράδες</ParentAreaName>
+    <GrName>Το Αγιολί</GrName>
+    <Prices>&lt;span class="price"&gt;€15-20&lt;/span&gt;</Prices>
+    <PriceFrom>15</PriceFrom>
+    <PriceTo>20</PriceTo>
+    <Score>0</Score>
+    <Degree>13</Degree>
+    <GrAddress>Σκόπελος&lt;br/&gt;Ξεν. «Skopellos Village»&lt;br/&gt;</GrAddress>
+    <PhoneNo>24240/23011&lt;br&gt;</PhoneNo>
+    <GrOpenPeriod>Απρ.-Οκτ. καθημερινά, μεσημέρι-βράδυ</GrOpenPeriod>
+    <GreekKitchenAward />
+    <AirConditioning />
+    <LocalSpecialties />
+    <ImportantWineList />
+    <ExcellentWineList />
+    <OutdoorsService>&lt;span class='restaurant-facilities rfacilities3'/&gt;</OutdoorsService>
+    <AttractiveView>&lt;span class='restaurant-facilities rfacilities4'/&gt;</AttractiveView>
+    <Parking />
+    <CreditCards>&lt;span class='restaurant-facilities rfacilities8'/&gt;</CreditCards>
+    <GrText>Το εστιατόριο του «Skopellos Village» σερβίρει μία άκρως νόστιμη παραδοσιακή ελληνική κουζίνα. Ξεκινήστε με μια ποικιλία από κρύα και ζεστά ορεκτικά και συνεχίστε με κρεατικά στη σχάρα, βαθιά νόστιμα και ψημένα στην εντέλεια. Ευχάριστος χώρος, ευγενικό σέρβις. </GrText>
+    <Resp_First>Μαρίας</Resp_First>
+    <Resp_Last>Βογιατζόγλου</Resp_Last>
+    <TCAT_GRDESCR>Κλασική ελληνική κουζίνα</TCAT_GRDESCR>
+    <Tcat_Id>7000044</Tcat_Id>
+    <GrPhonetic>αγιολι</GrPhonetic>
+  </Restaurants>
+  <Restaurants>
+    <REC_Id>7006407</REC_Id>
+    <REC_Type>R</REC_Type>
+    <AreaID>270</AreaID>
+    <Link>details.aspx?aid=270&amp;did=475&amp;rid=7006407&amp;cid=7000072</Link>
+    <D_Description>Σκόπελος</D_Description>
+    <DestinationID>475</DestinationID>
+    <ParentAreaName>Σποράδες</ParentAreaName>
+    <GrName>Το Ρόδι</GrName>
+    <Prices>&lt;span class="price"&gt;€10-25&lt;/span&gt;</Prices>
+    <PriceFrom>10</PriceFrom>
+    <PriceTo>25</PriceTo>
+    <Score>0</Score>
+    <Degree>12.5</Degree>
+    <GrAddress>Σκόπελος&lt;br/&gt;Παναγία Φανερωμένη&lt;br/&gt;</GrAddress>
+    <PhoneNo>24240/24601&lt;br&gt;</PhoneNo>
+    <GrOpenPeriod>Μάιο-Σεπ., καθημερινά, βράδυ</GrOpenPeriod>
+    <GreekKitchenAward />
+    <GoldenCaps>0</GoldenCaps>
+    <AirConditioning />
+    <LocalSpecialties />
+    <ImportantWineList />
+    <ExcellentWineList />
+    <OutdoorsService>&lt;span class='restaurant-facilities rfacilities3'/&gt;</OutdoorsService>
+    <AttractiveView />
+    <Parking />
+    <CreditCards>&lt;span class='restaurant-facilities rfacilities8'/&gt;</CreditCards>
+    <GrText>Γνωστό στέκι για τις βραδινές εξόδους στη Χώρα, αγαπημένο των VIPs του νησιού. Στη χαριτωμένη υπερυψωμένη αυλή με τη ροδιά και στη σάλα με το μοντέρνο ρουστίκ ύφος και την ποιοτική επίπλωση θα απολαύσετε ελληνικά και μεσογειακά πιάτα, πολλά από τα οποία είναι δημιουργίες της μητέρας του ιδιοκτήτη. Σπιτικά ορεκτικά (φλογέρες με χειροποίητο φύλλο, χόρτα τσιγαριστά με αβγά, ρολάκια κολοκυθιού με κατίκι Σκοπέλου και δυόσμο), ποικιλία ελληνικών τυριών, ζυμαρικά, παραδοσιακά αλλά και πιο δημιουργικά πιάτα με κρέας (αρνάκι στη γάστρα, χοιρινό με σάλτσα εσπεριδοειδών και καραμελωμένα μήλα κ.ά.).</GrText>
+    <Resp_First>Λευτέρη</Resp_First>
+    <Resp_Last>Μήτσιου</Resp_Last>
+    <TCAT_GRDESCR>Ελληνική &amp; μεσογειακή κουζίνα</TCAT_GRDESCR>
+    <Tcat_Id>7000072</Tcat_Id>
+    <GrPhonetic>Ρόδι</GrPhonetic>
+  </Restaurants>
+  <Restaurants>
+    <REC_Id>10002469</REC_Id>
+    <REC_Type>R</REC_Type>
+    <AreaID>270</AreaID>
+    <Link>details.aspx?aid=270&amp;did=475&amp;rid=10002469&amp;cid=7000071</Link>
+    <D_Description>Σκόπελος</D_Description>
+    <DestinationID>475</DestinationID>
+    <ParentAreaName>Σποράδες</ParentAreaName>
+    <GrName>Adrina Resort</GrName>
+    <Prices>&lt;span class="price"&gt;€20-30&lt;/span&gt;</Prices>
+    <PriceFrom>20</PriceFrom>
+    <PriceTo>30</PriceTo>
+    <Degree>12.5</Degree>
+    <GrAddress>Πάνορμος&lt;br/&gt;Ξενοδοχείο Adrina Resort &amp; Spa&lt;br/&gt;</GrAddress>
+    <PhoneNo>24240/23373&lt;br&gt;</PhoneNo>
+    <GrOpenPeriod>Τέλος Μαΐου –Μέσα Σεπτεμβρίου, καθημερινά, βράδυ</GrOpenPeriod>
+    <GreekKitchenAward />
+    <AirConditioning />
+    <LocalSpecialties />
+    <ImportantWineList />
+    <ExcellentWineList />
+    <OutdoorsService>&lt;span class='restaurant-facilities rfacilities3'/&gt;</OutdoorsService>
+    <AttractiveView />
+    <Parking>&lt;span class='restaurant-facilities rfacilities6'/&gt;</Parking>
+    <CreditCards>&lt;span class='restaurant-facilities rfacilities8'/&gt;</CreditCards>
+    <GrText>
+Το εστιατόριο του Adrina Resort βρίσκεται σε ένα μοντέρνο, νεανικό χώρο, με φοβερή θέα στη θάλασσα, μπροστά στην καταπληκτική πισίνα. Κουζίνα απλή, ελαφριά και αρωματική με αρκετά ζυμαρικά και λίγα εύγευστα πιάτα με κρέας. Δοκιμάστε ριζότο με εσπεριδοειδή, σπαγγέτι με ξύσμα λεμονιού και παρμεζάνα, καλοψημένο ribeye και τέλειο χοιρινό σουβλάκι. Για επιδόρπιο, γαλατόπιτα και το κλασικό σκοπελίτικο γλυκό του κουταλιού «αυγάτο» (από κίτρινο δαμάσκηνο). 
+</GrText>
+    <TCAT_GRDESCR>Ελληνική &amp; ιταλική κουζίνα</TCAT_GRDESCR>
+    <Tcat_Id>7000071</Tcat_Id>
+    <GrPhonetic>ΑΔΡΙΝΑ ΡΕΣΟΡΤ</GrPhonetic>
+  </Restaurants>
+  <Restaurants>
+    <REC_Id>10003768</REC_Id>
+    <REC_Type>R</REC_Type>
+    <AreaID>270</AreaID>
+    <Link>details.aspx?aid=270&amp;did=475&amp;rid=10003768&amp;cid=7000003</Link>
+    <D_Description>Σκόπελος</D_Description>
+    <DestinationID>475</DestinationID>
+    <ParentAreaName>Σποράδες</ParentAreaName>
+    <GrName>Φωτεινή</GrName>
+    <Prices>&lt;span class="price"&gt;€10-19&lt;/span&gt;</Prices>
+    <PriceFrom>10</PriceFrom>
+    <PriceTo>19</PriceTo>
+    <Degree>12.5</Degree>
+    <GrAddress>Πευκιάς&lt;br/&gt;</GrAddress>
+    <PhoneNo>6977607195&lt;br&gt;</PhoneNo>
+    <GrOpenPeriod>Πάσχα-μέσα Οκτ., μεσ.-βρ. </GrOpenPeriod>
+    <GreekKitchenAward />
+    <AirConditioning />
+    <LocalSpecialties />
+    <ImportantWineList />
+    <ExcellentWineList />
+    <OutdoorsService>&lt;span class='restaurant-facilities rfacilities3'/&gt;</OutdoorsService>
+    <AttractiveView />
+    <Parking>&lt;span class='restaurant-facilities rfacilities6'/&gt;</Parking>
+    <CreditCards />
+    <GrText>Η κα Φωτεινή άφησε ύστερα από 30 χρόνια το πόστο της στο λιμανάκι του Αγνώντα και μετακόμισε σε μια βεράντα με όλη τη Σκόπελο στο πιάτο. Κουζίνα απλή και σπιτική, όπου τη διαφορά κάνουν οι ατόφιες πρώτες ύλες και η μαστοριά στο τηγάνι και τη σχάρα. Δοκιμάστε κρομδομπούκια (κρεμμυδοπιτάκια), κολοκυθολούλουδα από τις κολοκυθιές του κτήματος και μπακαλιάρο στα κάρβουνα. Επίσης, αστακομακαρονάδα και κάποια ψάρια και κρεατικά στη σχάρα. Για το τέλος, κέρασμα με γλυκά του κουταλιού και μουσταλευριά από δικό της μούστο.  </GrText>
+    <Zip>37003</Zip>
+    <Resp_First>Φωτεινή Λιάγκα </Resp_First>
+    <TCAT_GRDESCR>Ταβέρνα - σχάρα</TCAT_GRDESCR>
+    <Tcat_Id>7000003</Tcat_Id>
+    <GrPhonetic>Φωτεινή</GrPhonetic>
+  </Restaurants>
+</RestaurantList>
