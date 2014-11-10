@@ -6,21 +6,20 @@
         
         <span class="filtered-length">Showing {{filtered.length}} results</span>
         <ion-list>
-            <ion-item ng-repeat="restaurant in filtered = (restaurants | filter:filterExpr | orderBy: restaurant.Degree)" type="item-text-wrap" href="#/tab/restaurant/{{restaurant.REC_Id}}">
+            <ion-item ng-repeat="restaurant in filtered = (restaurants | filter:filterExpr) | orderBy: 'GrPhonetic'" type="item-text-wrap" href="#/tab/restaurant/{{restaurant.REC_Id}}">
                 <table cellspacing="0" cellpadding="0" border="0" width="100%" class="alphaguide-list-table">
                     <tbody>
                         <tr class="head">
-                            <td>
+                            <td style="width:70%">
                                 <span class="title">{{restaurant.GrName}}</span>
                             </td>
-                            <td style="text-align:right;">
-                                <span class="restaurant-prize hat"></span>
-                                <span class="restaurant-votes">{{restaurant.Degree}}</span>
-                                <span class="restaurant-vote-max"> / 20</span>
+                            <td style="text-align:right;width:30%">
+                                <span class="restaurant-prize hat">{{restaurant.GoldenCaps}}</span>
+                                <span class="restaurant-votes">{{restaurant.Degree}}</span><span class="restaurant-vote-max">20</span>
                             </td>
                         </tr>
                         <tr>
-                            <td>        
+                            <td>
                                 <span class="restaurant-category">{{restaurant.TCAT_GRDESCR}}</span></br>
                                 {{restaurant.GrText}}</br>
                                 <b>Tel:</b> {{restaurant.PhoneNo}}</br>
@@ -29,7 +28,7 @@
                             <td style="text-align:right;">
                                 <span class="nomos">{{restaurant.ParentAreaName}}</span></br>
                                 <span class="topos">{{restaurant.D_Description}}</span></br>
-                                <span class="price">{{restaurant.PriceFrom}} - {{restaurant.PriceTo}}</span> &euro;
+                                <span class="price">{{restaurant.PriceFrom}} - {{restaurant.PriceTo}} &euro;</span>
                             </td>
                         </tr>
                     </tbody>

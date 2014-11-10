@@ -9,15 +9,15 @@ body{
 *, *:before, *:after {
   box-sizing: border-box;
 }
-.background-container{
+/*.background-container{
     min-height: 100%;
     width:100%;
-    /*background: transparent url('../img/alphaguide-bckg.jpg') no-repeat center center fixed;*/
+    background: transparent url('../img/alphaguide-bckg.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-}
+}*/
 ion-nav-view, .pane, .view{
     background-color:transparent;
 }
@@ -71,7 +71,7 @@ div.list{
     border-width: 1px;
     font-weight:bold;
     font-size: 1.8rem;
-    margin: 3px 1px;
+    margin: 0 0 1rem 0;
     padding: 0;
     white-space: normal;
 }
@@ -80,10 +80,16 @@ div.list{
     padding:3px 5px;
     color:#069;
 }
+.alphaguide-list-table:hover{
+    background-color: #ededed;
+}
 .alphaguide-list-table td{
     color:#333;
     font-size:1.3rem;
     font-weight:normal;
+    white-space: normal;
+    line-height:2rem;
+    padding:5px;
 }
 .alphaguide-list-table .head{
     border-bottom:1px solid #db1c50;
@@ -92,6 +98,56 @@ div.list{
     color: #069;
     font-size: 1.8rem;
     font-weight: bold;
+}
+.alphaguide-list-table .restaurant-category {
+    color: #db1c50;
+    font-weight: bold;
+}
+.alphaguide-list-table .restaurant-votes {
+    background-color: #fff;
+    border: 1px solid #000;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    color: #000;
+    display: inline-block;
+    padding: 2px;
+    text-align: center;
+    vertical-align: middle;
+    width: 35px;
+}
+.alphaguide-list-table .restaurant-vote-max {
+    background-color: #000;
+    border: 1px solid #000;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    color: #fff;
+    display: inline-block;
+    padding: 2px;
+    text-align: center;
+    vertical-align: middle;
+    width: 35px;
+}
+.alphaguide-list-table .nomos {
+    color: #069;
+    font-weight: bold;
+    padding: 5px 0 0 0;
+    display: inline-block;display: inline-block;
+}
+.alphaguide-list-table .topos {
+    color: #0085d0;
+    font-weight: bold;
+    padding: 5px 0 0 0;
+    display: inline-block;
+}
+.alphaguide-list-table .price {
+    background-color: #db1c50;
+    border-radius: 10px;
+    color: #fff;
+    display: inline-block;
+    font-weight: bold;
+    padding: 3px 8px;
+    white-space: nowrap;
+    margin-top:5px;
 }
 i.icon{
     color:#db1c50;
