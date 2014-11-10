@@ -10,20 +10,20 @@
                 <table cellspacing="0" cellpadding="0" border="0" width="100%" class="alphaguide-list-table">
                     <tbody>
                         <tr class="head">
-                            <td style="width:70%">
+                            <td>
                                 <span class="title">{{restaurant.GrName}}</span>
                             </td>
-                            <td style="text-align:right;width:30%">
-                                <span class="restaurant-prize hat">{{restaurant.GoldenCaps}}</span>
-                                <span class="restaurant-votes">{{restaurant.Degree}}</span><span class="restaurant-vote-max">20</span>
+                            <td style="text-align:right;">
+                                <span class="prize hat">{{restaurant.GoldenCaps}}</span>
+                                <span class="votes">{{restaurant.Degree}}</span><span class="vote-max">20</span>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <span class="restaurant-category">{{restaurant.TCAT_GRDESCR}}</span></br>
-                                {{restaurant.GrText}}</br>
-                                <b>Tel:</b> {{restaurant.PhoneNo}}</br>
-                                <b>Open:</b> {{restaurant.GrOpenPeriod}}
+                                <span class="category">{{restaurant.TCAT_GRDESCR}}</span></br>
+                                {{restaurant.GrAddress}}</br>
+                                <b>Τηλ:</b> {{restaurant.PhoneNo}}</br>
+                                <b>Ανοικτά:</b> {{restaurant.GrOpenPeriod}}
                             </td>
                             <td style="text-align:right;">
                                 <span class="nomos">{{restaurant.ParentAreaName}}</span></br>

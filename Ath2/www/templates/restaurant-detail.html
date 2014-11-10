@@ -7,7 +7,46 @@
 
 <ion-view title="{{restaurant.GrName}}">
   <ion-content has-header="true" padding="true">
-      {{restaurant.GrName}}<br/>
-      {{restaurant.GrOpenPeriod}}<br/>
+      <table cellspacing="0" cellpadding="0" border="0" width="100%" class="alphaguide-list-table detail-page">
+          <tbody>
+          <tr class="head">
+              <td>
+                  <span class="title">{{restaurant.GrName}}</span>
+              </td>
+              <td style="text-align:right;>
+                  <span class="prize hat">{{restaurant.GoldenCaps}}</span>
+                  <span class="votes">{{restaurant.Degree}}</span><span class="vote-max">20</span>
+              </td>
+          </tr>
+          <tr>
+              <td colspan="2" class="border-bot">
+                  <span class="category">{{restaurant.TCAT_GRDESCR}}</span>
+              </td>
+          </tr>
+          <tr>
+              <td>
+                  {{restaurant.GrAddress}}</br>
+                  <b>Τηλ:</b> {{restaurant.PhoneNo}}</br>
+                  <b>Ανοικτά:</b> {{restaurant.GrOpenPeriod}}
+              </td>
+              <td style="text-align:right;">
+                  <span class="nomos">{{restaurant.ParentAreaName}}</span></br>
+                  <span class="topos">{{restaurant.D_Description}}</span></br>
+                  <span class="price">{{restaurant.PriceFrom}} - {{restaurant.PriceTo}} &euro;</span>
+              </td>
+          </tr>
+
+          <tr>
+              <td colspan="2" class="border-bot">
+                  <span class="section">Η αξιολόγηση του Alpha Guide</span>
+              </td>
+          </tr>
+          <tr>
+              <td colspan="2">
+                  {{restaurant.GrText}}
+              </td>
+          </tr>
+          </tbody>
+      </table>
   </ion-content>
 </ion-view>

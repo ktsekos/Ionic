@@ -91,19 +91,35 @@ div.list{
     line-height:2rem;
     padding:5px;
 }
+.alphaguide-list-table td{
+    width:70%;
+}
 .alphaguide-list-table .head{
-    border-bottom:1px solid #db1c50;
+     border-bottom:1px solid #db1c50;
+ }
+.alphaguide-list-table.detail-page .head{
+    border-bottom:0 none;
 }
 .alphaguide-list-table .title{
     color: #069;
     font-size: 1.8rem;
     font-weight: bold;
 }
-.alphaguide-list-table .restaurant-category {
+.alphaguide-list-table.detail-page .title{
+    font-size:3.5rem;
+    color: #db1c50;
+    display:block;
+    padding:2rem 0;
+}
+.alphaguide-list-table .category {
     color: #db1c50;
     font-weight: bold;
 }
-.alphaguide-list-table .restaurant-votes {
+.alphaguide-list-table.detail-page .category{
+    font-size:2.5rem;
+    color: #069;
+}
+.alphaguide-list-table .votes {
     background-color: #fff;
     border: 1px solid #000;
     border-bottom-left-radius: 4px;
@@ -115,7 +131,7 @@ div.list{
     vertical-align: middle;
     width: 35px;
 }
-.alphaguide-list-table .restaurant-vote-max {
+.alphaguide-list-table .vote-max {
     background-color: #000;
     border: 1px solid #000;
     border-bottom-right-radius: 4px;
@@ -148,6 +164,16 @@ div.list{
     padding: 3px 8px;
     white-space: nowrap;
     margin-top:5px;
+}
+.alphaguide-list-table .section {
+    color: #000;
+    font-family: "Trebuchet MS",Lucida Sans Unicode,Lucida Grande,Lucida Sans,Arial;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 20px 0 5px;
+}
+.alphaguide-list-table .border-bot {
+    border-bottom:3px solid #069;
 }
 i.icon{
     color:#db1c50;
