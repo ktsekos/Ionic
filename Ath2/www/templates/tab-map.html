@@ -1,21 +1,33 @@
-
-      <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
-      <script>
-          var map;
-          function initialize() {
-              var mapOptions = {
-                  zoom: 8,
-                  center: new google.maps.LatLng(-34.397, 150.644)
-              };
-              map = new google.maps.Map(document.getElementById('map-canvas'),
-                      mapOptions);
-          }
-
-          initialize();
-
-      </script>
+<ion-view title="Map">
 
       <div id="map-canvas"></div>
 
+    <script>
+
+        navigator.geolocation.getCurrentPosition(geolocationSuccess);
+
+        function geolocationSuccess (position) {
+
+            var myLat = position.coords.latitude;
+            var myLong = position.coords.longitude;
+            initializeMap(myLat, myLong);
+        }
+
+
+           function initializeMap(lat, long) {
+
+                var mapOptions = {
+                    zoom: 16,
+                    center: new google.maps.LatLng(lat, long)
+                };
+                map = new google.maps.Map(document.getElementById('map-canvas'),
+                        mapOptions);
+            }
+
+
+
+    </script>
+
+</ion-view>
 
 
