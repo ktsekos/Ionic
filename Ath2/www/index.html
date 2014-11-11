@@ -18,9 +18,10 @@
         <script src="js/controllers.js"></script>
         <script src="js/restaurants_services.js"></script>
         <script src="js/hotels_services.js"></script>
+        <script src="js/geolocation-plugin.js"></script>
     </head>
-    <body ng-app="starter" animation="fade-in">
-        <div class="background-container">
+    <body  onload="onBodyLoad()">
+        <div class="background-container" ng-app="starter" animation="fade-in">
         <!--
           The nav bar that will be updated as we navigate between views.
         -->
@@ -36,6 +37,8 @@
             -->
             <ion-nav-view></ion-nav-view>
         </div>
-   
+
+
+
     </body>
 </html>

@@ -16,4 +16,5 @@
   <feature name="StatusBar">
     <param name="ios-package" value="CDVStatusBar" onload="true"/>
   </feature>
+  <gap:plugin name="org.transistorsoft.cordova.background-geolocation" version="0.1.0" />
 </widget>
