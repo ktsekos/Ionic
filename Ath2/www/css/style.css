@@ -177,7 +177,9 @@ div.list{
 .alphaguide-list-table .border-bot {
     border-bottom:3px solid #069;
 }
-
+#map-canvas{
+   margin-top:44px;
+}
 i.icon{
     color:#db1c50;
 }
