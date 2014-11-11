@@ -86,15 +86,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.restaurants_
       }
     })
     
-    .state('tab.settings', {
-      url: '/settings',
+    .state('tab.map', {
+      url: '/map',
       views: {
-        'tab-settings': {
-          templateUrl: 'templates/tab-settings.html',
-          controller: 'SettingsCtrl'
-        }
+          'tab-map': {
+              templateUrl: 'templates/tab-map.html',
+              controller: 'MapCtrl'
+          }
       }
-    });
+  });
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/tab/home');

@@ -9,6 +9,7 @@ angular.module('starter.controllers', [])
 
 .controller('RestaurantDetailCtrl', function($scope, $stateParams, Restaurants) {
     $scope.restaurant = Restaurants.get($stateParams.restaurantId);
+
 })
 
 .controller('HotelsCtrl', function($scope, Hotels) {
@@ -19,6 +20,6 @@ angular.module('starter.controllers', [])
     $scope.hotel = Hotels.get($stateParams.hotelId);
 })
 
-.controller('SettingsCtrl', function($scope) {
+.controller('MapCtrl', function($scope) {
 });
 
