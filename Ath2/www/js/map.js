@@ -1,15 +1,13 @@
 $(document).ready(function(){
-    navigator.geolocation.getCurrentPosition(geolocationSuccess);
+    navigator.geolocation.getCurrentPosition(geolocationSuccess, geolocationError);
 
-    function geolocationSuccess (position) {
-
+    function geolocationSuccess(position) {
         var myLat = position.coords.latitude;
         var myLong = position.coords.longitude;
         initializeMap(myLat, myLong);
     }
 
     function initializeMap(lat, long) {
-
         var myLatLng = new google.maps.LatLng(lat, long);
         var mapOptions = {
             zoom: 16,
@@ -22,6 +20,9 @@ $(document).ready(function(){
             map: map,
             title: 'You are here!'
         });
-
     }
-})
+
+    function geolocationError() {
+        $('#map-canvas').html('Sorry, your GPS is off');
+    }
+});
