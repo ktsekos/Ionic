@@ -14,6 +14,7 @@ function onLoad() {
 //
 function onDeviceReady() {
     alert("onDeviceReady");
+    watchID = navigator.geolocation.watchPosition(onSuccess, onError, options);
 }
 
 // Handle the online event

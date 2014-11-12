@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    navigator.geolocation.getCurrentPosition(geolocationSuccess, geolocationError);
+    navigator.geolocation.watchPosition(geolocationSuccess, geolocationError, { maximumAge: 10000, timeout: 30000, enableHighAccuracy: true });
 
     function geolocationSuccess(position) {
         var myLat = position.coords.latitude;
