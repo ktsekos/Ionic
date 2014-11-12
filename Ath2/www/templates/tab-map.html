@@ -1,36 +1,13 @@
 <ion-view title="Map">
 
-    <div id="map-canvas"></div>
+    <div id="map-canvas">
+        <p>
+            <i class="icon ion-loading-d"></i>
+        </p>
+    </div>
 
-    <script>
+    <script src="js/map.js"></script>
 
-        navigator.geolocation.getCurrentPosition(geolocationSuccess);
-
-        function geolocationSuccess (position) {
-
-            var myLat = position.coords.latitude;
-            var myLong = position.coords.longitude;
-            initializeMap(myLat, myLong);
-        }
-
-        function initializeMap(lat, long) {
-
-            var myLatLng = new google.maps.LatLng(lat, long);
-            var mapOptions = {
-                zoom: 16,
-                center: myLatLng
-            };
-            var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-
-            var marker = new google.maps.Marker({
-                position: myLatLng,
-                map: map,
-                title: 'You are here!'
-            });
-
-        }
-
-    </script>
 
 </ion-view>
 

@@ -179,6 +179,25 @@ div.list{
 }
 #map-canvas{
    margin-top:44px;
+   margin-bottom:44px;
+   text-align:center;
+}
+#map-canvas p{
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    font-size: 3rem;
+    font-weight: normal;
+    list-style: outside none none;
+    position: relative;
+    text-align: center;
+    z-index: 0;
+    height:100%;
+}
+#map-canvas p i{
+    position:absolute;
+    top:45%;
+    left:50%;
 }
 i.icon{
     color:#db1c50;
