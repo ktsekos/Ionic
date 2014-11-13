@@ -1,13 +1,65 @@
 <!--
-  This template loads for the 'tab.friend-detail' state (app.js)
-  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
-  The FriendsCtrl pulls data from the Friends service (service.js)
-  The Friends service returns an array of friend data
+  This template loads for the 'tab.hotel-detail' state (app.js)
+  'restaurant' is a $scope variable created in the hotelscontroller (controllers.js)
+  The RestaurantsCtrl pulls data from the Restaurants service (service.js)
+  The Restaurants service returns an array of restaurant data
 -->
 
-<ion-view title="{{hotel.name}}">
-  <ion-content has-header="true" padding="true">
-      {{hotel.name}}<br/>
-      {{hotel.address}}
-  </ion-content>
+<ion-view title="{{hotel.GrName}}">
+    <ion-content has-header="true" padding="true">
+        <table cellspacing="0" cellpadding="0" border="0" width="100%" class="alphaguide-list-table detail-page">
+            <tbody>
+            <tr class="head">
+                <td>
+                    <span class="title">{{hotel.GrName}}</span>
+                </td>
+                <td style="text-align:right;">
+                    <span class="prize hat">{{hotel.GoldenCaps}}</span>
+                    <span class="votes">{{hotel.Degree}}</span><span class="vote-max">20</span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="border-bot">
+                    <span class="category">{{hotel.TCAT_GRDESCR}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span ng-bind-html="hotel.GrAddress"></span>
+                    <b>Τηλ:</b> <span ng-bind-html="hotel.PhoneNo"></span>
+                    <b>Ανοικτά:</b> {{hotel.GrOpenPeriod}}
+                </td>
+                <td style="text-align:right;">
+                    <span class="nomos">{{hotel.ParentAreaName}}</span><br>
+                    <span class="topos">{{hotel.D_Description}}</span><br>
+                    <span class="price">{{hotel.PriceFrom}} - {{hotel.PriceTo}} &euro;</span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="facilities">
+                    <span ng-bind-html="hotel.AirConditioning" title="AirConditioning"></span>
+                    <span ng-bind-html="hotel.LocalSpecialties" title="LocalSpecialties"></span>
+                    <span ng-bind-html="hotel.ImportantWineList" title="ImportantWineList"></span>
+                    <span ng-bind-html="hotel.ExcellentWineList" title="ExcellentWineList"></span>
+                    <span ng-bind-html="hotel.OutdoorsService" title="OutdoorsService"></span>
+                    <span ng-bind-html="hotel.AttractiveView" title="AttractiveView"></span>
+                    <span ng-bind-html="hotel.Parking" title="Parking"></span>
+                    <span ng-bind-html="hotel.CreditCards" title="CreditCards"></span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="border-bot">
+                    <span class="section">Η αξιολόγηση του Alpha Guide</span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    {{hotel.GrText}}
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+    </ion-content>
 </ion-view>
+

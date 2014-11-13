@@ -13,7 +13,7 @@
               <td>
                   <span class="title">{{restaurant.GrName}}</span>
               </td>
-              <td style="text-align:right;>
+              <td style="text-align:right;">
                   <span class="prize hat">{{restaurant.GoldenCaps}}</span>
                   <span class="votes">{{restaurant.Degree}}</span><span class="vote-max">20</span>
               </td>
@@ -25,18 +25,28 @@
           </tr>
           <tr>
               <td>
-                  {{restaurant.GrAddress}}</br>
-                  <span ng-bind-html-unsafe="{{restaurant.AirConditioning}}"></span>
-                  <b>Τηλ:</b> {{restaurant.PhoneNo}}</br>
+                  <span ng-bind-html="restaurant.GrAddress"></span>
+                  <b>Τηλ:</b> <span ng-bind-html="restaurant.PhoneNo"></span>
                   <b>Ανοικτά:</b> {{restaurant.GrOpenPeriod}}
               </td>
               <td style="text-align:right;">
-                  <span class="nomos">{{restaurant.ParentAreaName}}</span></br>
-                  <span class="topos">{{restaurant.D_Description}}</span></br>
+                  <span class="nomos">{{restaurant.ParentAreaName}}</span><br>
+                  <span class="topos">{{restaurant.D_Description}}</span><br>
                   <span class="price">{{restaurant.PriceFrom}} - {{restaurant.PriceTo}} &euro;</span>
               </td>
           </tr>
-
+          <tr>
+              <td colspan="2" class="facilities">
+                  <span ng-bind-html="restaurant.AirConditioning" title="AirConditioning"></span>
+                  <span ng-bind-html="restaurant.LocalSpecialties" title="LocalSpecialties"></span>
+                  <span ng-bind-html="restaurant.ImportantWineList" title="ImportantWineList"></span>
+                  <span ng-bind-html="restaurant.ExcellentWineList" title="ExcellentWineList"></span>
+                  <span ng-bind-html="restaurant.OutdoorsService" title="OutdoorsService"></span>
+                  <span ng-bind-html="restaurant.AttractiveView" title="AttractiveView"></span>
+                  <span ng-bind-html="restaurant.Parking" title="Parking"></span>
+                  <span ng-bind-html="restaurant.CreditCards" title="CreditCards"></span>
+              </td>
+          </tr>
           <tr>
               <td colspan="2" class="border-bot">
                   <span class="section">Η αξιολόγηση του Alpha Guide</span>

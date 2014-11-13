@@ -3,8 +3,7 @@ angular.module('starter.restaurants_services', [])
 * A simple example service that returns some data.
 */
 .factory('Restaurants', function() {
-// Might use a resource here that returns a JSON array
-// Some fake testing data
+
     var restaurants = (function () {
         var restaurants = null;
         $.ajax({

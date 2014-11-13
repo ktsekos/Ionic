@@ -1,12 +1,38 @@
 <ion-view title="Hotels">
     <ion-content class="padding">
-        <label for="filterByName">Search by hotel name:<label><br/><input ng-model="filterExpr.name" name="filterByName">
-        <label for="filterByRegion">Search by hotel region:<label><br/><input ng-model="filterExpr.region" name="filterByRegion">
+
+        <label for="filterByRegion">Search by region:</label><br/><input ng-model="filterExpr.ParentAreaName" name="filterByRegion" id="filterByRegion">
+        <label for="filterByName">Search by hotel name:</label><br/><input ng-model="filterExpr.GrName" name="filterByName" id="filterByName">
         
         <span class="filtered-length">Showing {{filtered.length}} results</span>
-        <ion-list ng-show="filterExpr">
-            <ion-item ng-repeat=" hotel in filtered = (hotels | filter: filterExpr) " type="item-text-wrap" href="#/tab/hotel/{{hotel.id}}">
-                {{hotel.name}}, {{hotel.region}}, {{hotel.address}}
+        <ion-list>
+            <ion-item ng-repeat="hotel in filtered = (hotels | filter:filterExpr) | orderBy: 'GrPhonetic'" type="item-text-wrap" href="#/tab/hotel/{{hotel.REC_Id}}">
+                <table cellspacing="0" cellpadding="0" border="0" width="100%" class="alphaguide-list-table">
+                    <tbody>
+                    <tr class="head">
+                        <td>
+                            <span class="title">{{hotel.GrName}}</span>
+                        </td>
+                        <td style="text-align:right;">
+                            <span class="prize hat">{{hotel.GoldenCaps}}</span>
+                            <span class="votes">{{hotel.Degree}}</span><span class="vote-max">20</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="category">{{hotel.TCAT_GRDESCR}}</span><br>
+                            <span ng-bind-html="hotel.GrAddress"></span>
+                            <b>Τηλ:</b> <span ng-bind-html="hotel.PhoneNo"></span>
+                            <b>Ανοικτά:</b> {{hotel.GrOpenPeriod}}
+                        </td>
+                        <td style="text-align:right;">
+                            <span class="nomos">{{hotel.ParentAreaName}}</span><br>
+                            <span class="topos">{{hotel.D_Description}}</span><br>
+                            <span class="price">{{hotel.PriceFrom}} - {{hotel.PriceTo}} &euro;</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
             </ion-item>
         </ion-list>
     </ion-content>

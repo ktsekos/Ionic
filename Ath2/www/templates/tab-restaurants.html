@@ -1,8 +1,9 @@
 <ion-view title="Restaurants">
     <ion-content class="padding">
-        
-        <label for="filterByName">Search by restaurant name:<label><br/><input ng-model="filterExpr.GrName" name="filterByName">
-        <label for="filterByRegion">Search by restaurant region:<label><br/><input ng-model="filterExpr.ParentAreaName" name="filterByRegion">
+
+        <label for="filterByRegion">Search by region:</label><br/><input ng-model="filterExpr.ParentAreaName" name="filterByRegion" id="filterByRegion">
+        <label for="filterByName">Search by restaurant name:</label><br/><input ng-model="filterExpr.GrName" name="filterByName" id="filterByName">
+
         
         <span class="filtered-length">Showing {{filtered.length}} results</span>
         <ion-list>
@@ -20,14 +21,14 @@
                         </tr>
                         <tr>
                             <td>
-                                <span class="category">{{restaurant.TCAT_GRDESCR}}</span></br>
-                                {{restaurant.GrAddress}}</br>
-                                <b>Τηλ:</b> {{restaurant.PhoneNo}}</br>
+                                <span class="category">{{restaurant.TCAT_GRDESCR}}</span><br>
+                                <span ng-bind-html="restaurant.GrAddress"></span>
+                                <b>Τηλ:</b> <span ng-bind-html="restaurant.PhoneNo"></span>
                                 <b>Ανοικτά:</b> {{restaurant.GrOpenPeriod}}
                             </td>
                             <td style="text-align:right;">
-                                <span class="nomos">{{restaurant.ParentAreaName}}</span></br>
-                                <span class="topos">{{restaurant.D_Description}}</span></br>
+                                <span class="nomos">{{restaurant.ParentAreaName}}</span><br>
+                                <span class="topos">{{restaurant.D_Description}}</span><br>
                                 <span class="price">{{restaurant.PriceFrom}} - {{restaurant.PriceTo}} &euro;</span>
                             </td>
                         </tr>
