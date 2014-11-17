@@ -14,8 +14,7 @@
                     <span class="title">{{hotel.GrName}}</span>
                 </td>
                 <td style="text-align:right;">
-                    <span class="prize hat">{{hotel.GoldenCaps}}</span>
-                    <span class="votes">{{hotel.Degree}}</span><span class="vote-max">20</span>
+                    <span ng-bind-html="hotel.KEYS"></span>
                 </td>
             </tr>
             <tr>
@@ -27,7 +26,8 @@
                 <td>
                     <span ng-bind-html="hotel.GrAddress"></span>
                     <b>Τηλ:</b> <span ng-bind-html="hotel.PhoneNo"></span>
-                    <b>Ανοικτά:</b> {{hotel.GrOpenPeriod}}
+                    <b>Ανοικτά:</b> <span ng-bind-html="hotel.GrOpenPeriod"></span>
+                    <b>Δωμάτια:</b> <span ng-bind-html="hotel.GrRooms"></span>
                 </td>
                 <td style="text-align:right;">
                     <span class="nomos">{{hotel.ParentAreaName}}</span><br>
@@ -37,14 +37,38 @@
             </tr>
             <tr>
                 <td colspan="2" class="facilities">
-                    <span ng-bind-html="hotel.AirConditioning" title="AirConditioning"></span>
-                    <span ng-bind-html="hotel.LocalSpecialties" title="LocalSpecialties"></span>
-                    <span ng-bind-html="hotel.ImportantWineList" title="ImportantWineList"></span>
-                    <span ng-bind-html="hotel.ExcellentWineList" title="ExcellentWineList"></span>
-                    <span ng-bind-html="hotel.OutdoorsService" title="OutdoorsService"></span>
-                    <span ng-bind-html="hotel.AttractiveView" title="AttractiveView"></span>
-                    <span ng-bind-html="hotel.Parking" title="Parking"></span>
-                    <span ng-bind-html="hotel.CreditCards" title="CreditCards"></span>
+                    <span ng-bind-html="hotel.AirConditioning"></span>
+                    <span ng-bind-html="hotel.Parking"></span>
+                    <span ng-bind-html="hotel.CreditCards"></span>
+                    <span ng-bind-html="hotel.RoomTV"></span>
+                    <span ng-bind-html="hotel.MiniBar"></span>
+                    <span ng-bind-html="hotel.Restaurant"></span>
+                    <span ng-bind-html="hotel.Bar"></span>
+                    <span ng-bind-html="hotel.Business"></span>
+                    <span ng-bind-html="hotel.Conference"></span>
+                    <span ng-bind-html="hotel.InDoorPool"></span>
+                    <span ng-bind-html="hotel.PrivateBeach"></span>
+                    <span ng-bind-html="hotel.CourtSports"></span>
+                    <span ng-bind-html="hotel.SeaSports"></span>
+                    <span ng-bind-html="hotel.Riding"></span>
+                    <span ng-bind-html="hotel.Golf"></span>
+                    <span ng-bind-html="hotel.Gym"></span>
+                    <span ng-bind-html="hotel.Spa"></span>
+                    <span ng-bind-html="hotel.Childrens"></span>
+                    <span ng-bind-html="hotel.Pets"></span>
+                    <span ng-bind-html="hotel.Wifi"></span>
+                    <span ng-bind-html="hotel.SETE"></span>
+                    <span ng-bind-html="hotel.outdoorpool"></span>
+                    <span ng-bind-html="hotel.EurobankReturn"></span>
+                    <span ng-bind-html="hotel.Business"></span>
+                    <span ng-bind-html="hotel.Conference"></span>
+                    <span ng-bind-html="hotel.InDoorPool"></span>
+                    <span ng-bind-html="hotel.PrivateBeach"></span>
+                    <span ng-bind-html="hotel.CourtSports"></span>
+                    <span ng-bind-html="hotel.SeaSports"></span>
+                    <span ng-bind-html="hotel.Riding"></span>
+                    <span ng-bind-html="hotel.Golf"></span>
+                    <span ng-bind-html="hotel.Gym"></span>
                 </td>
             </tr>
             <tr>

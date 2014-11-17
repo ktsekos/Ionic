@@ -1,8 +1,12 @@
 <ion-view title="Hotels">
     <ion-content class="padding">
 
-        <label for="filterByRegion">Search by region:</label><br/><input ng-model="filterExpr.ParentAreaName" name="filterByRegion" id="filterByRegion">
-        <label for="filterByName">Search by hotel name:</label><br/><input ng-model="filterExpr.GrName" name="filterByName" id="filterByName">
+        <select ng-model="filterExpr.ParentAreaName" name="filterByRegion">
+            <option value="" disabled selected>Select by region</option>
+            <option value="Κυκλάδες" selected>Κυκλάδες</option>
+            <option value="Σποράδες">Σποράδες</option>
+        </select><br>
+        <input ng-model="filterExpr.GrName" name="filterByName" id="filterByName" placeholder="Search by hotel name">
         
         <span class="filtered-length">Showing {{filtered.length}} results</span>
         <ion-list>
@@ -14,16 +18,15 @@
                             <span class="title">{{hotel.GrName}}</span>
                         </td>
                         <td style="text-align:right;">
-                            <span class="prize hat">{{hotel.GoldenCaps}}</span>
-                            <span class="votes">{{hotel.Degree}}</span><span class="vote-max">20</span>
+                            <span ng-bind-html="hotel.KEYS"></span>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <span class="category">{{hotel.TCAT_GRDESCR}}</span><br>
                             <span ng-bind-html="hotel.GrAddress"></span>
                             <b>Τηλ:</b> <span ng-bind-html="hotel.PhoneNo"></span>
-                            <b>Ανοικτά:</b> {{hotel.GrOpenPeriod}}
+                            <b>Ανοικτά:</b> <span ng-bind-html="hotel.GrOpenPeriod"></span>
+                            <b>Δωμάτια:</b> <span ng-bind-html="hotel.GrRooms"></span>
                         </td>
                         <td style="text-align:right;">
                             <span class="nomos">{{hotel.ParentAreaName}}</span><br>

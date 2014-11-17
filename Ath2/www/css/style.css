@@ -41,12 +41,6 @@ h2.home-header{
         margin-top:0;
     }
 }
-h3{
-    padding:5px 10px;
-    color:#fff;
-    background-color: #006699;
-    font-size:1.8rem;
-}
 a.button.button-half{
     border-radius: 1rem;
     clear: none;
@@ -57,14 +51,17 @@ a.button.button-half{
     padding: 5px;
     width: 100%;
 }
+input, select{
+    display:block;
+    width:100%;
+    min-height:3rem;
+    margin-bottom:1rem;
+}
 .filtered-length{
     font-size:2rem;
     margin:1em 0;
     color:#db1c50;
     display:block;
-}
-div.list{
-    margin-top:2rem;
 }
 .item {
     background-color: #fff;
@@ -210,7 +207,7 @@ i.icon{
 
 /* Facilities */
 
-.restaurant-facilities, .hotels-facilities {
+.restaurant-facilities, .hotels-facilities, .hotels-votes,  .hotels-votes-rose{
     background: url("../img/alphaguide-stripe.png") no-repeat scroll 0 -44px rgba(0, 0, 0, 0);
     display: inline-block;
     height: 22px;
@@ -341,4 +338,37 @@ i.icon{
 .hfacilities-sete {
     background-position: -660px -66px;
     width: 56px;
+}
+.hotels-votes {
+    background: url("../img/alphaguide-stripe.png") no-repeat scroll -24px 0 rgba(0, 0, 0, 0);
+}
+.hotels-votes-rose {
+    background: url("../img/alphaguide-stripe.png") no-repeat scroll -24px 0 #f7d2c0;
+}
+.key1 {
+    background-position: 0 0;
+    width: 24px;
+}
+.key2 {
+    width: 15px;
+}
+.key3 {
+    width: 30px;
+}
+.key4 {
+    width: 45px;
+}
+.key5 {
+    width: 60px;
+}
+.key6 {
+    width: 75px;
+}
+.key-plus {
+    background-position: -99px 0;
+    width: 15px;
+}
+.key-rose {
+    background-position: -528px -66px;
+    width: 22px;
 }

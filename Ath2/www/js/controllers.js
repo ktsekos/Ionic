@@ -9,7 +9,6 @@ angular.module('starter.controllers', [])
 
 .controller('RestaurantDetailCtrl', function($scope, $stateParams, Restaurants) {
     $scope.restaurant = Restaurants.get($stateParams.restaurantId);
-
 })
 
 .controller('HotelsCtrl', function($scope, Hotels) {
