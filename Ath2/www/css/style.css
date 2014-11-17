@@ -207,7 +207,7 @@ i.icon{
 
 /* Facilities */
 
-.restaurant-facilities, .hotels-facilities, .hotels-votes,  .hotels-votes-rose{
+.restaurant-facilities, .hotels-facilities, .hotels-votes, .hotels-votes-rose{
     background: url("../img/alphaguide-stripe.png") no-repeat scroll 0 -44px rgba(0, 0, 0, 0);
     display: inline-block;
     height: 22px;

@@ -13,16 +13,24 @@ function onLoad() {
 // Cordova is loaded and it is now safe to make calls Cordova methods
 //
 function onDeviceReady() {
-    alert("onDeviceReady");
+    checkConnection();
+    alert('aaa');
     watchID = navigator.geolocation.watchPosition(onSuccess, onError, options);
 }
 
 // Handle the online event
 //
-function onOnline() {
-    alert("onOnline");
-}
+function checkConnection() {
+    var networkState = navigator.network.connection.type;
 
-function onOffline() {
-    alert("onOffline");
-}
+    var states = {};
+    states[Connection.UNKNOWN]  = 'Unknown connection';
+    states[Connection.ETHERNET] = 'Ethernet connection';
+    states[Connection.WIFI]     = 'WiFi connection';
+    states[Connection.CELL_2G]  = 'Cell 2G connection';
+    states[Connection.CELL_3G]  = 'Cell 3G connection';
+    states[Connection.CELL_4G]  = 'Cell 4G connection';
+    states[Connection.NONE]     = 'No network connection';
+
+    alert('Connection type: ' + states[networkState]);
+};
