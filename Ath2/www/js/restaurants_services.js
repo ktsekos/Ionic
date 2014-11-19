@@ -7,12 +7,18 @@ angular.module('starter.restaurants_services', [])
     var restaurants = (function () {
         var restaurants = null;
         $.ajax({
-            'async': false,
-            'global': false,
-            'url': "./data/RestaurantList.json",
-            'dataType': "json",
-            'success': function (data) {
-                restaurants = data;
+            async: false,
+            cache: false,
+            global: false,
+            dataType: "text",
+            url: "http://feeds.athinorama.gr/AlphaGuide.asmx/RestaurantList?AreaID=270&DestinationID=475&ShowAll=0",
+            success: function (data) {
+                str = data;
+                str = str.substring(76, str.length -9);
+                restaurants = JSON.parse(str);
+            },
+            error: function(){
+                console.log('failure');
             }
         });
         return restaurants;

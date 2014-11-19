@@ -3,16 +3,21 @@ angular.module('starter.hotels_services', [])
 * A simple example service that returns some data.
 */
 .factory('Hotels', function() {
-    
     var hotels = (function () {
-        var hotels = null;
         $.ajax({
             'async': false,
             'global': false,
-            'url': "./data/HotelList.json",
-            'dataType': "json",
+            'dataType': "text",
+            'url': "http://feeds.athinorama.gr/AlphaGuide.asmx/HotelList?AreaID=0&DestinationID=0&ShowAll=1",
             'success': function (data) {
-                hotels = data;
+                console.log('all good');
+                str = data;
+                str = str.substring(76, str.length -9);
+                hotels = JSON.parse(str);
+                console.log(hotels);
+            },
+            'error': function(){
+                console.log('failure');
             }
         });
         return hotels;

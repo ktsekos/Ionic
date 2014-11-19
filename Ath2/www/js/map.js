@@ -27,4 +27,6 @@ $(document).ready(function(){
     function geolocationError() {
         $('#map-canvas').html('Sorry, your GPS is off');
     }
+
+
 });
