@@ -1,4 +1,4 @@
-angular.module('starter.restaurants_services', [])
+angular.module('starter.restaurants_services', ['angularUtils.directives.dirPagination'])
 /**
 * A simple example service that returns some data.
 */

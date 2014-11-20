@@ -11,6 +11,9 @@ body{
 *, *:before, *:after {
   box-sizing: border-box;
 }
+a{
+    text-decoration:none;
+}
 /*.background-container{
     min-height: 100%;
     width:100%;
@@ -77,8 +80,10 @@ input, select{
     padding:3px 5px;
     color:#069;
 }
-.alphaguide-list-table:hover{
-    background-color: #ededed;
+.alphaguide-list-table{
+    background-color: #fff;
+    margin-bottom:10px;
+    text-decoration:none;
 }
 .alphaguide-list-table td{
     color:#333;

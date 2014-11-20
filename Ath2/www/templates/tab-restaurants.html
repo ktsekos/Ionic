@@ -6,8 +6,9 @@
 
         
         <span class="filtered-length">Showing {{filtered.length}} results</span>
-        <ion-list>
-            <ion-item ng-repeat="restaurant in filtered = (restaurants | filter:filterExpr) | orderBy: 'GrPhonetic'" type="item-text-wrap" href="#/tab/restaurant/{{restaurant.REC_Id}}">
+        <dir-pagination-controls></dir-pagination-controls>
+        <div style="height:100px">
+            <a dir-paginate="restaurant in filtered = (restaurants | filter:filterExpr) | orderBy: 'GrPhonetic' | itemsPerPage: 5" total-items="14" href="#/tab/restaurant/{{restaurant.REC_Id}}">
                 <table cellspacing="0" cellpadding="0" border="0" width="100%" class="alphaguide-list-table">
                     <tbody>
                         <tr class="head">
@@ -33,9 +34,8 @@
                             </td>
                         </tr>
                     </tbody>
-                </table> 
-            </ion-item>
-        </ion-list>
-        
+                </table>
+            </a>
+        </div>
     </ion-content>
 </ion-view>
