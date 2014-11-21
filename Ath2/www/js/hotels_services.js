@@ -5,18 +5,16 @@ angular.module('starter.hotels_services', [])
 .factory('Hotels', function() {
     var hotels = (function () {
         $.ajax({
+            async: false,
             'global': false,
-            'dataType': "json",
-            'url': "./data/HotelList.json",
-            'success': function (data) {
-                //console.log('all good');
-                //str = data;
-                //console.log(str);
-                //str = str.substring(76, str.length -9);
-                //hotels = JSON.parse(str);
-                hotels=data;
+            'dataType': "text",
+            url: "http://feeds.athinorama.gr/AlphaGuide.asmx/HotelList?AreaID=270&DestinationID=475&ShowAll=0",
+            success: function (data) {
+                str = data;
+                str = str.substring(76, str.length -9);
+                hotels = JSON.parse(str);
             },
-            'error': function(){
+            error: function(){
                 console.log('failure');
             }
         });

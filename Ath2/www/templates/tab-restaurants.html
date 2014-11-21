@@ -8,7 +8,7 @@
         <span class="filtered-length">Showing {{filtered.length}} results</span>
         <dir-pagination-controls></dir-pagination-controls>
         <div style="height:100px">
-            <a dir-paginate="restaurant in filtered = (restaurants | filter:filterExpr) | orderBy: 'GrPhonetic' | itemsPerPage: 5" total-items="14" href="#/tab/restaurant/{{restaurant.REC_Id}}">
+            <a ng-repeat="restaurant in filtered = (restaurants | filter:filterExpr) | orderBy: 'GrPhonetic'" href="#/tab/restaurant/{{restaurant.REC_Id}}">
                 <table cellspacing="0" cellpadding="0" border="0" width="100%" class="alphaguide-list-table">
                     <tbody>
                         <tr class="head">
