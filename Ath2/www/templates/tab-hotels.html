@@ -9,7 +9,7 @@
         <input ng-model="filterExpr.GrName" name="filterByName" id="filterByName" placeholder="Search by hotel name">
         
         <span class="filtered-length">Showing {{filtered.length}} results</span>
-        <a ng-repeat="hotel in filtered = (hotels | filter:filterExpr) | orderBy: 'GrPhonetic' " href="#/tab/hotel/{{hotel.REC_Id}}">
+        <span ng-repeat="hotel in filtered = (hotels | filter:filterExpr) | orderBy: 'GrPhonetic'">
             <table cellspacing="0" cellpadding="0" border="0" width="100%" class="alphaguide-list-table">
                 <tbody>
                 <tr class="head">
@@ -35,6 +35,6 @@
                 </tr>
                 </tbody>
             </table>
-        </a>
+        </span>
     </ion-content>
 </ion-view>
