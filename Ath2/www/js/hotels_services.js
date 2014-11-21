@@ -8,7 +8,7 @@ angular.module('starter.hotels_services', [])
             'async': false,
             'global': false,
             'dataType': "json",
-            'url': "./data/HotelListAll.json",
+            'url': "./data/Peloponnisos.json",
             'success': function (data) {
                 //console.log('all good');
                 //str = data;
