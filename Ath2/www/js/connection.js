@@ -11,6 +11,5 @@ function onLoad() {
 // Cordova is loaded and it is now safe to make calls Cordova methods
 //
 function onDeviceReady() {
-    alert("onDeviceReady");
     watchID = navigator.geolocation.watchPosition(onSuccess, onError, options);
 }
