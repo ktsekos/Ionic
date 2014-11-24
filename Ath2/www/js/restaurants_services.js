@@ -11,7 +11,7 @@ angular.module('starter.restaurants_services', ['angularUtils.directives.dirPagi
             cache: false,
             global: false,
             dataType: "text",
-            url: "http://feeds.athinorama.gr/AlphaGuide.asmx/RestaurantList?AreaID=270&DestinationID=475&ShowAll=0",
+            url: "http://feeds.athinorama.gr/AlphaGuide.asmx/RestaurantListLight?AreaID=0&DestinationID=0&ShowAll=1",
             success: function (data) {
                 str = data;
                 str = str.substring(76, str.length -9);
