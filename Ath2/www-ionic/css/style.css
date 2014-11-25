@@ -2,16 +2,28 @@ html, body, #map-canvas{
     height: 100%;
     margin: 0;
     padding: 0;
-    font-size: 100%;
+    font-size: 62.5%;
     box-sizing: border-box;
 }
 body{
     background-color:#eee;
 }
 *, *:before, *:after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-.pane, .view{
+a{
+    text-decoration:none;
+}
+/*.background-container{
+    min-height: 100%;
+    width:100%;
+    background: transparent url('../img/alphaguide-bckg.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}*/
+ion-nav-view, .pane, .view{
     background-color:transparent;
 }
 h1.title{
@@ -71,6 +83,7 @@ input, select{
 .alphaguide-list-table{
     background-color: #fff;
     margin-bottom:10px;
+    text-decoration:none;
 }
 .alphaguide-list-table td{
     color:#333;
@@ -84,8 +97,8 @@ input, select{
     width:70%;
 }
 .alphaguide-list-table .head{
-    border-bottom:1px solid #db1c50;
-}
+     border-bottom:1px solid #db1c50;
+ }
 .alphaguide-list-table.detail-page .head{
     border-bottom:0 none;
 }
@@ -171,9 +184,9 @@ input, select{
     padding-top:2rem;
 }
 #map-canvas{
-    margin-top:44px;
-    margin-bottom:44px;
-    text-align:center;
+   margin-top:44px;
+   margin-bottom:44px;
+   text-align:center;
 }
 #map-canvas p{
     border-radius: 4px;
@@ -195,6 +208,7 @@ input, select{
 i.icon{
     color:#db1c50;
 }
+
 
 /* Facilities */
 
