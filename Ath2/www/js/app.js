@@ -11,6 +11,10 @@ athinorama.config(['$routeProvider',
                 templateUrl: 'views/hotel-detail.html',
                 controller: 'HotelDetailCtrl'
             }).
+            when('/hotels/map/:hotelId', {
+                templateUrl: 'views/hotel-map.html',
+                controller: 'HotelMapCtrl'
+            }).
             otherwise({
                 redirectTo: '/hotels'
             });
