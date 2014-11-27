@@ -2,7 +2,7 @@ html, body, #map-canvas{
     height: 100%;
     margin: 0;
     padding: 0;
-    font-size: 100%;
+    font-size: 62.5%;
     box-sizing: border-box;
 }
 body{
@@ -11,19 +11,27 @@ body{
 *, *:before, *:after {
     box-sizing: border-box;
 }
+a, a:hover{
+    text-decoration:none;
+}
 .pane, .view{
     background-color:transparent;
 }
+.header {
+    background-color: #fff;
+    top: 0;
+    height: 40px;
+    position: fixed;
+    width: 100%;
+    border-bottom:1px solid #ccc;
+    z-index:9999;
+}
 h1.title{
     font-size:2rem;
-}
-h2.home-header{
-    font-weight:bold;
-    text-align:center;
-    font-size:2.5rem;
-    padding:0.5rem 1rem;
-    margin:0.5rem;
     color: #db1c50;
+    text-align:center;
+    margin:0;
+    line-height: 40px;
 }
 @media screen and ( max-height: 500px ){
     h2.home-header{
@@ -32,7 +40,7 @@ h2.home-header{
         margin-top:0;
     }
 }
-a.button.button-half{
+a.button.button-block{
     border-radius: 1rem;
     clear: none;
     display: inline;
@@ -41,6 +49,7 @@ a.button.button-half{
     margin: 1rem 0 0 0;
     padding: 5px;
     width: 100%;
+    text-align:center;
 }
 input, select{
     display:block;
@@ -53,20 +62,6 @@ input, select{
     margin:1em 0;
     color:#db1c50;
     display:block;
-}
-.item {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    font-weight:bold;
-    font-size: 1.8rem;
-    margin: 0 0 1rem 0;
-    padding: 0;
-    white-space: normal;
-}
-.item-complex .item-content{
-    background:transparent;
-    padding:3px 5px;
-    color:#069;
 }
 .alphaguide-list-table{
     background-color: #fff;
@@ -175,9 +170,9 @@ input, select{
     bottom: 0;
     height: auto;
     left: 0;
-    margin-top: -1px;
+    margin-top: 41px;
     overflow: hidden;
-    padding-top: 1px;
+    padding-top: 41px;
     position: absolute;
     right: 0;
     top: 0;
@@ -350,4 +345,29 @@ input, select{
 .key-rose {
     background-position: -528px -66px;
     width: 22px;
+}
+.container.container-outer{
+    padding-top:40px;
+    padding-bottom:50px;
+    font-size:1.6rem;
+}
+.footer {
+    background-color: #f5f5f5;
+    bottom: 0;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    border-top:1px solid #ccc;
+    z-index:9999;
+}
+.footer .bottom-tabs{
+    width:100%;
+    text-align:center;
+    font-size:1.4rem;
+}
+.footer .bottom-tabs td{
+    padding-top:4px;
+}
+.footer .bottom-tabs a span{
+    color: #db1c50;
 }

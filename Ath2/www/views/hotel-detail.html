@@ -1,7 +1,42 @@
-<h1>{{hotel.GrName}}</h1>
-<h3>{{hotel.GrOpenPeriod}}</h3>
-<h5>{{hotel.GrText}}</h5>
-<h5>{{hotel.Latitude}}</h5>
-<h5>{{hotel.Longitude}}</h5>
+<table cellspacing="0" cellpadding="0" border="0" width="100%" class="alphaguide-list-table detail-page">
+    <tbody>
+    <tr class="head">
+        <td>
+            <span class="title">{{hotel.GrName}}</span>
+        </td>
+        <td style="text-align:right;">
+
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" class="border-bot">
+            <span class="category">{{hotel.TCAT_GRDESCR}}</span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <span ng-bind-html="hotel.GrAddress"></span>
+            <b>Τηλ:</b>
+            <b>Ανοικτά:</b>
+            <b>Δωμάτια:</b>
+        </td>
+        <td style="text-align:right;">
+            <span class="nomos">{{hotel.ParentAreaName}}</span><br>
+            <span class="topos">{{hotel.D_Description}}</span><br>
+            <span class="price">{{hotel.PriceFrom}} - {{hotel.PriceTo}} &euro;</span>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" class="border-bot">
+            <span class="section">Η αξιολόγηση του Alpha Guide</span>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            {{hotel.GrText}}
+        </td>
+    </tr>
+    </tbody>
+</table>
 
 <a href="#/hotels/map/{{hotel.REC_Id}}">Show on map</a>

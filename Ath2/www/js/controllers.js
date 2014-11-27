@@ -1,5 +1,7 @@
 var athinoramaControllers = angular.module('athinoramaControllers', ['ngMap']);
 
+athinoramaControllers.controller('HomeCtrl',[]);
+
 athinoramaControllers.controller('HotelListCtrl',['$scope', '$http', function ($scope, $http){
 
     $http.get('http://feeds.athinorama.gr/AlphaGuide.asmx/RestaurantListLight?AreaID=269&DestinationID=0&ShowAll=0').success(function(data) {
@@ -37,6 +39,12 @@ athinoramaControllers.controller('HotelMapCtrl',['$scope', '$routeParams', '$htt
         $scope.hotel.Longitude = parseFloat($scope.hotel.Longitude);
         $scope.hotel.Latitude = parseFloat($scope.hotel.Latitude);
         var hotelLatlng = new google.maps.LatLng($scope.hotel.Latitude, $scope.hotel.Longitude);
+        var mapOptions = {
+            map: map,
+            zoom: 16,
+            zoomControl: false,
+            center: hotelLatlng
+        };
 
         if (navigator.geolocation) { //Checks if browser supports geolocation
             navigator.geolocation.getCurrentPosition(function (position) {
@@ -61,7 +69,7 @@ athinoramaControllers.controller('HotelMapCtrl',['$scope', '$routeParams', '$htt
                 var request = {
                     origin: myLatlng,
                     destination: hotelLatlng,
-                    travelMode: google.maps.DirectionsTravelMode.DRIVING
+                    travelMode: google.maps.DirectionsTravelMode.WALKING
                 };
 
                 directionsService.route(request, function (response, status) {
@@ -71,20 +79,7 @@ athinoramaControllers.controller('HotelMapCtrl',['$scope', '$routeParams', '$htt
                 });
             });
 
-        }else{
-            var mapOptions = {
-                zoom: 16,
-                zoomControl: false,
-                center: hotelLatlng
-            };
-            var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-
-            var marker = new google.maps.Marker({
-                position: myLatLng,
-                map: map,
-                title: 'Hotel position'
-            });
-        }
+        };
 
     });
 

@@ -3,6 +3,10 @@ var athinorama = angular.module('athinorama', ['ngRoute', 'athinoramaControllers
 athinorama.config(['$routeProvider',
     function($routeProvider) {
         $routeProvider.
+            when('/',{
+                templateUrl: 'views/home.html',
+                controller: 'HomeCtrl'
+            }).
             when('/hotels', {
                 templateUrl: 'views/hotel-list.html',
                 controller: 'HotelListCtrl'
@@ -16,6 +20,6 @@ athinorama.config(['$routeProvider',
                 controller: 'HotelMapCtrl'
             }).
             otherwise({
-                redirectTo: '/hotels'
+                redirectTo: '/'
             });
     }]);

@@ -1,29 +1,47 @@
-<div class="container">
-    <div class="row">
-        <div class="col-xs-12">
-            <h1 class="title">Athinorama.gr</h1>
-        </div>
+<div class="row">
+    <div class="col-xs-12">
+        Search: <input type="text" ng-model="query">
     </div>
-    <div class="row">
-        <div class="col-xs-12">
-            Search: <input type="text" ng-model="query">
-        </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        Order By:
+        <select ng-model="ordering">
+            <option value="GrName">Name</option>
+            <option value="GrAddress">Address</option>
+            <option value="Degree">Score</option>
+            <option value="PriceFrom">Price</option>
+        </select>
     </div>
-    <div class="row">
-        <div class="col-xs-12">
-            Select:
-            <select ng-model="ordering">
-                <option value="GrName">Name</option>
-                <option value="GrAddress">Address</option>
-                <option value="Longitude">Long</option>
-            </select>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-12">
-            <p ng-repeat="hotel in hotels | filter: query | orderBy: ordering">
-                <a href="#/hotels/{{hotel.REC_Id}}">{{hotel.GrName | lowercase}} {{hotel.ParentAreaName | uppercase}} {{hotel.D_Description | uppercase}} {{hotel.GrAddress}} {{hotel.Latitude}} {{hotel.Longitude}}</a>
-            </p>
-        </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <a ng-repeat="hotel in hotels | filter: query | orderBy: ordering" href="#/hotels/{{hotel.REC_Id}}">
+            <table cellspacing="0" cellpadding="0" border="0" width="100%" class="alphaguide-list-table">
+                <tbody>
+                <tr class="head">
+                    <td>
+                        <span class="title">{{hotel.GrName}}</span>
+                    </td>
+                    <td style="text-align:right;">
+                        <span class="prize hat">{{hotel.GoldenCaps}}</span>
+                        <span class="votes">{{hotel.Degree}}</span><span class="vote-max">20</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="category">{{hotel.TCAT_GRDESCR}}</span><br>
+                        <b>Τηλ:</b></span>
+                        <b>Ανοικτά:</b> {{hotel.GrOpenPeriod}}
+                    </td>
+                    <td style="text-align:right;">
+                        <span class="nomos">{{hotel.ParentAreaName}}</span><br>
+                        <span class="topos">{{hotel.D_Description}}</span><br>
+                        <span class="price">{{hotel.PriceFrom}} - {{hotel.PriceTo}} &euro;</span>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </a>
     </div>
 </div>
