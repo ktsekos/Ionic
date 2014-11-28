@@ -1,6 +1,19 @@
 <div class="row">
     <div class="col-xs-12">
-        Search: <input type="text" ng-model="query">
+        <select id="region-filter">
+            <option value="" disabled selected>Select by region</option>
+            <option value="259">East Aegean</option>
+            <option value="260">Argosaronikos</option>
+            <option value="258">Attica</option>
+            <option value="261">Dwdekanisa</option>
+            <option value="262">Eptanisa</option>
+            <option value="269">Peloponnisos</option>
+        </select>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        Search: <input type="text" ng-model="filterExpr.GrName">
     </div>
 </div>
 <div class="row">
@@ -15,8 +28,13 @@
     </div>
 </div>
 <div class="row">
-    <div class="col-xs-12">
-        <a ng-repeat="hotel in hotels | filter: query | orderBy: ordering" href="#/hotels/{{hotel.REC_Id}}">
+    <div class="col-xs-12 filtered-length">
+        Βρέθηκαν {{filtered.length}} αποτελέσματα
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12 angular-list">
+        <a ng-repeat="hotel in filtered = (hotels | filter:filterExpr) | orderBy: ordering" href="#/hotels/{{hotel.REC_Id}}">
             <table cellspacing="0" cellpadding="0" border="0" width="100%" class="alphaguide-list-table">
                 <tbody>
                 <tr class="head">

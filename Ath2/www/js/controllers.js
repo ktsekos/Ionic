@@ -1,14 +1,17 @@
-var athinoramaControllers = angular.module('athinoramaControllers', ['ngMap']);
+var athinoramaControllers = angular.module('athinoramaControllers', [ 'ngMap' ]);
 
 athinoramaControllers.controller('HomeCtrl',[]);
 
 athinoramaControllers.controller('HotelListCtrl',['$scope', '$http', function ($scope, $http){
-
-    $http.get('http://feeds.athinorama.gr/AlphaGuide.asmx/RestaurantListLight?AreaID=269&DestinationID=0&ShowAll=0').success(function(data) {
-        console.log('all good');
-        str = data;
-        str = str.substring(76, str.length -9);
-        $scope.hotels = JSON.parse(str);
+    $('#region-filter').change( function(){
+        var areaId = $('#region-filter').val();
+        $('.filtered-length').show();
+        $http.get('http://feeds.athinorama.gr/AlphaGuide.asmx/RestaurantListLight?AreaID='+areaId+'&DestinationID=0&ShowAll=0').success(function(data) {
+            console.log('all good');
+            str = data;
+            str = str.substring(76, str.length -9);
+            $scope.hotels = JSON.parse(str);
+        });
     });
 
     $scope.ordering ="GrName";
@@ -22,11 +25,18 @@ athinoramaControllers.controller('HotelDetailCtrl',['$scope', '$routeParams', '$
         str = data;
         str = str.substring(77, str.length -10);
         $scope.hotel = JSON.parse(str);
+        console.log(localStorage);
+    });
+
+    $('#add-to-favorites').click( function(){
+        localStorage.setItem("hotelid"+$routeParams.hotelId, JSON.stringify($scope.hotel));
+        console.log(localStorage);
     });
 
 }]);
 
 athinoramaControllers.controller('HotelMapCtrl',['$scope', '$routeParams', '$http', function ($scope, $routeParams, $http){
+
     var map;
     $http.get('http://feeds.athinorama.gr/AlphaGuide.asmx/RestaurantDetails?RID=' + $routeParams.hotelId ).success(function(data) {
 
@@ -69,7 +79,7 @@ athinoramaControllers.controller('HotelMapCtrl',['$scope', '$routeParams', '$htt
                 var request = {
                     origin: myLatlng,
                     destination: hotelLatlng,
-                    travelMode: google.maps.DirectionsTravelMode.WALKING
+                    travelMode: google.maps.DirectionsTravelMode.DRIVING
                 };
 
                 directionsService.route(request, function (response, status) {
@@ -81,6 +91,33 @@ athinoramaControllers.controller('HotelMapCtrl',['$scope', '$routeParams', '$htt
 
         };
 
+    });
+
+}]);
+
+athinoramaControllers.controller('FavoritesCtrl',['$scope', function ($scope){
+
+    if(localStorage.length >0 ){
+        $('#clear-favorites').show();
+        for ( var i = 0 ; i < localStorage.length ; i++ ) {
+            var fav = localStorage.getItem( localStorage.key( i ) );
+            fav = JSON.parse(fav);
+            console.log(fav);
+            $('#favorites-list').append(
+                '<li>'+fav.REC_Id+'</li>'
+            );
+        };
+    }else{
+        $('#clear-favorites').hide();
+        $('#favorites-list').html('No favorites');
+    };
+
+
+
+    $('#clear-favorites').click( function(){
+        localStorage.clear();
+        $('#favorites-list').html('No favorites');
+        $('#clear-favorites').hide();
     });
 
 }]);

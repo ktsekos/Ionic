@@ -19,6 +19,10 @@ athinorama.config(['$routeProvider',
                 templateUrl: 'views/hotel-map.html',
                 controller: 'HotelMapCtrl'
             }).
+            when('/favorites', {
+                templateUrl: 'views/favorites.html',
+                controller: 'FavoritesCtrl'
+            }).
             otherwise({
                 redirectTo: '/'
             });

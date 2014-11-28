@@ -15,7 +15,6 @@
     </tr>
     <tr>
         <td>
-            <span ng-bind-html="hotel.GrAddress"></span>
             <b>Τηλ:</b>
             <b>Ανοικτά:</b>
             <b>Δωμάτια:</b>
@@ -34,6 +33,11 @@
     <tr>
         <td colspan="2">
             {{hotel.GrText}}
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" style="text-align:right;">
+            <button id="add-to-favorites">Add to favorites</button>
         </td>
     </tr>
     </tbody>
