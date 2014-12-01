@@ -1,7 +1,5 @@
 var athinoramaControllers = angular.module('athinoramaControllers', [ 'ngMap' ]);
 
-athinoramaControllers.controller('HomeCtrl',[]);
-
 athinoramaControllers.controller('HotelListCtrl',['$scope', '$http', function ($scope, $http){
     $('#region-filter').change( function(){
         var areaId = $('#region-filter').val();
@@ -25,12 +23,10 @@ athinoramaControllers.controller('HotelDetailCtrl',['$scope', '$routeParams', '$
         str = data;
         str = str.substring(77, str.length -10);
         $scope.hotel = JSON.parse(str);
-        console.log(localStorage);
     });
 
     $('#add-to-favorites').click( function(){
         localStorage.setItem("hotelid"+$routeParams.hotelId, JSON.stringify($scope.hotel));
-        console.log(localStorage);
     });
 
 }]);

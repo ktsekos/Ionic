@@ -4,8 +4,7 @@ athinorama.config(['$routeProvider',
     function($routeProvider) {
         $routeProvider.
             when('/',{
-                templateUrl: 'views/home.html',
-                controller: 'HomeCtrl'
+                templateUrl: 'views/home.html'
             }).
             when('/hotels', {
                 templateUrl: 'views/hotel-list.html',
