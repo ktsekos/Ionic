@@ -1,3 +1,10 @@
+<div id="advanced-search">
+
+</div>
+<span id="swipe-menu">
+    <span>Advanced search &darr;</span>
+</span>
+
 <div class="row">
     <div class="col-xs-12">
         <select id="region-filter">
@@ -11,15 +18,21 @@
         </select>
     </div>
 </div>
-<div class="row">
+<div class="row area-filter">
     <div class="col-xs-12">
-        Search: <input type="text" ng-model="filterExpr.GrName">
+        <select ng-model="filterExpr.D_Description">
+            <option value="" disabled selected>Select by area</option>
+            <option ng-repeat=" area in areas" value="{{area}}">{{area}}</option>
+        </select>
     </div>
 </div>
-<div class="row">
-    <div class="col-xs-12">
-        Order By:
+<div class="row search-filter">
+    <div class="col-xs-8">
+        <input type="text" ng-model="filterExpr.GrName" placeholder="Search by name, area, etc...">
+    </div>
+    <div class="col-xs-4">
         <select ng-model="ordering">
+            <option value="" disabled selected>Order by</option>
             <option value="GrName">Name</option>
             <option value="GrAddress">Address</option>
             <option value="Degree">Score</option>
@@ -27,8 +40,8 @@
         </select>
     </div>
 </div>
-<div class="row">
-    <div class="col-xs-12 filtered-length">
+<div class="row filtered-length">
+    <div class="col-xs-12">
         Βρέθηκαν {{filtered.length}} αποτελέσματα
     </div>
 </div>

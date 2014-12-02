@@ -17,15 +17,32 @@ a, a:hover{
 .pane, .view{
     background-color:transparent;
 }
-#swipe-menu{
-    width:100%;
+#advanced-search{
+    background-color: #ccc;
+    height:200px;
     position:fixed;
-    height:50px;
+    top:-160px;
+    left:0;
+    font-size:1.4rem;
+    width:100%;
+    z-index:9998;
+}
+#swipe-menu{
+    position:fixed;
     background-color: #ccc;
     color:#fff;
-    top:0;
-    left:0;
-    z-index:1030;
+    top:40px;
+    right:5px;
+    color:#000;
+    font-size:1.4rem;
+    padding:10px;
+    -webkit-border-bottom-right-radius: 7px;
+    -webkit-border-bottom-left-radius: 7px;
+    -moz-border-radius-bottomright: 7px;
+    -moz-border-radius-bottomleft: 7px;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    z-index:9998;
 }
 .header {
     background-color: #fff;
@@ -50,6 +67,11 @@ h1.title{
         margin-top:0;
     }
 }
+.container.container-outer{
+    padding-top:100px;
+    padding-bottom:50px;
+    font-size:1.6rem;
+}
 a.button.button-block{
     border-radius: 1rem;
     clear: none;
@@ -61,16 +83,22 @@ a.button.button-block{
     width: 100%;
     text-align:center;
 }
+a.button.button-block img{
+    max-width: 100%;
+}
 input, select{
     display:block;
     width:100%;
-    min-height:3rem;
+    min-height:2rem;
     margin-bottom:1rem;
 }
 .filtered-length{
     font-size:2rem;
-    margin:1em 0;
+    margin-top:1rem;
+    margin-bottom:1rem;
     color:#db1c50;
+}
+.row.search-filter, .row.ordering, .row.filtered-length, .row.area-filter{
     display:none;
 }
 .alphaguide-list-table{
@@ -100,17 +128,17 @@ input, select{
     font-weight: bold;
 }
 .alphaguide-list-table.detail-page .title{
-    font-size:3.5rem;
+    font-size:2.5rem;
     color: #db1c50;
     display:block;
-    line-height:4.5rem;
+    line-height:3.5rem;
 }
 .alphaguide-list-table .category {
     color: #db1c50;
     font-weight: bold;
 }
 .alphaguide-list-table.detail-page .category{
-    font-size:2.5rem;
+    font-size:2rem;
     color: #069;
 }
 .alphaguide-list-table .votes {
@@ -162,7 +190,7 @@ input, select{
 .alphaguide-list-table .section {
     color: #000000;
     font-family: "Trebuchet MS",Lucida Sans Unicode,Lucida Grande,Lucida Sans,Arial, sans-serif;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
     padding: 20px 0 5px;
 }
@@ -173,7 +201,7 @@ input, select{
 }
 .alphaguide-list-table .border-bot {
     border-bottom:3px solid #006699;
-    padding-top:2rem;
+    padding-top:1rem;
 }
 #map-canvas{
     text-align:center;
@@ -355,11 +383,6 @@ input, select{
 .key-rose {
     background-position: -528px -66px;
     width: 22px;
-}
-.container.container-outer{
-    padding-top:50px;
-    padding-bottom:50px;
-    font-size:1.6rem;
 }
 .footer {
     background-color: #f5f5f5;

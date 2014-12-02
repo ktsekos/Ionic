@@ -1,23 +1,50 @@
 var athinoramaControllers = angular.module('athinoramaControllers', [ 'ngMap' ]);
 
 athinoramaControllers.controller('HotelListCtrl',['$scope', '$http', function ($scope, $http){
+    var inputsShown = false;
     $('#region-filter').change( function(){
         var areaId = $('#region-filter').val();
-        $('.filtered-length').show();
         $http.get('http://feeds.athinorama.gr/AlphaGuide.asmx/RestaurantListLight?AreaID='+areaId+'&DestinationID=0&ShowAll=0').success(function(data) {
             console.log('all good');
             str = data;
             str = str.substring(76, str.length -9);
             $scope.hotels = JSON.parse(str);
+            $scope.areas=[];
+            $.each($scope.hotels, function(index, value) {
+                if ($.inArray(value.D_Description, $scope.areas) === -1) {
+                   $scope.areas.push(value.D_Description);
+                }
+            });
+            console.log($scope.areas);
+            $('.row.search-filter, .row.ordering, .row.filtered-length, .row.area-filter').show();
         });
     });
 
     $scope.ordering ="GrName";
 
+    <!--Swipe-->
+    var prevSwipe="";
+    $("#swipe-menu").swipe( {
+        swipeDown:function(event, direction, distance, duration, fingerCount, fingerData) {
+            if ( prevSwipe === "" || prevSwipe === "up" ){
+                prevSwipe='down';
+                $(this).animate({ "top": "+=150px", "opacity": "0.9"}, 1000).find('span').html('Advanced search &uarr;').parent().parent().find('#advanced-search').animate({ "height": "+=150px", "opacity": "0.9"}, 1000);
+            }
+        },
+        swipeUp:function(event, direction, distance, duration, fingerCount, fingerData) {
+            if ( prevSwipe === "" || prevSwipe === "down" ){
+                prevSwipe='up';
+                $(this).animate({ "top": "-=150px", "opacity": "1"}, 1000 ).find('span').html('Advanced search &darr;').parent().parent().find('#advanced-search').animate({ "height": "-=150px", "opacity": "1"}, 1000);
+            }
+        },
+        //Default is 75px, set to 0 for demo so any distance triggers swipe
+        threshold:0
+    });
+
 }]);
 
 athinoramaControllers.controller('HotelDetailCtrl',['$scope', '$routeParams', '$http', function ($scope, $routeParams, $http){
-
+    var map;
     $http.get('http://feeds.athinorama.gr/AlphaGuide.asmx/RestaurantDetails?RID=' + $routeParams.hotelId ).success(function(data) {
         console.log ('hotel good');
         str = data;
@@ -26,7 +53,7 @@ athinoramaControllers.controller('HotelDetailCtrl',['$scope', '$routeParams', '$
     });
 
     $('#add-to-favorites').click( function(){
-        localStorage.setItem("hotelid"+$routeParams.hotelId, JSON.stringify($scope.hotel));
+        localStorage.setItem($routeParams.hotelId, JSON.stringify($scope.hotel));
     });
 
 }]);
@@ -98,17 +125,27 @@ athinoramaControllers.controller('FavoritesCtrl',['$scope', function ($scope){
         for ( var i = 0 ; i < localStorage.length ; i++ ) {
             var fav = localStorage.getItem( localStorage.key( i ) );
             fav = JSON.parse(fav);
-            console.log(fav);
             $('#favorites-list').append(
-                '<li>'+fav.REC_Id+'</li>'
-            );
-        };
+                '<table cellspacing="0" cellpadding="0" border="0" width="100%" class="alphaguide-list-table detail-page">' +
+                    '<tbody>' +
+                        '<tr class="head">' +
+                            '<td>' +
+                                '<span class="title">'+fav.GrName+'</span>' +
+                            '</td>' +
+                            '<td style="text-align:right;"></td>' +
+                        '</tr>' +
+                        '<tr>' +
+                            '<td colspan="2" class="border-bot">' +
+                                '<span class="category">'+fav.TCAT_GRDESCR+'</span>' +
+                            '</td>' +
+                        '</tr>' +
+                    '</tbody>' +
+                '</table>');
+        }
     }else{
         $('#clear-favorites').hide();
         $('#favorites-list').html('No favorites');
     };
-
-
 
     $('#clear-favorites').click( function(){
         localStorage.clear();
