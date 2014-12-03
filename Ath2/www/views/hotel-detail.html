@@ -5,7 +5,9 @@
                 <span class="title">{{hotel.GrName}}</span>
             </td>
             <td style="text-align:right;">
-
+                <button id="add-to-favorites">
+                   Add to favorites
+                </button>
             </td>
         </tr>
         <tr>
@@ -36,12 +38,10 @@
             </td>
         </tr>
         <tr>
-            <td>
+            <td colspan="2">
                 <a href="#/hotels/map/{{hotel.REC_Id}}">Get directions</a>
             </td>
-            <td style="text-align:right;">
-                <button id="add-to-favorites">Add to favorites</button>
-            </td>
+
         </tr>
     </tbody>
 </table>

@@ -82,6 +82,7 @@ a.button.button-block{
     padding: 5px;
     width: 100%;
     text-align:center;
+    background-color: #ccc;
 }
 a.button.button-block img{
     max-width: 100%;

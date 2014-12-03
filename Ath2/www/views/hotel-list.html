@@ -14,14 +14,19 @@
             <option value="258">Attica</option>
             <option value="261">Dwdekanisa</option>
             <option value="262">Eptanisa</option>
+            <option value="268">Makedonia</option>
             <option value="269">Peloponnisos</option>
+            <option value="271">Sterea Ellada</option>
+            <option value="266">Kriti</option>
+            <option value="265">Thraki</option>
+            <option value="263">Epirus</option>
         </select>
     </div>
 </div>
 <div class="row area-filter">
     <div class="col-xs-12">
         <select ng-model="filterExpr.D_Description">
-            <option value="" disabled selected>Select by area</option>
+            <option value="0" disabled selected>Select by area</option>
             <option ng-repeat=" area in areas" value="{{area}}">{{area}}</option>
         </select>
     </div>

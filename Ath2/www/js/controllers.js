@@ -15,7 +15,6 @@ athinoramaControllers.controller('HotelListCtrl',['$scope', '$http', function ($
                    $scope.areas.push(value.D_Description);
                 }
             });
-            console.log($scope.areas);
             $('.row.search-filter, .row.ordering, .row.filtered-length, .row.area-filter').show();
         });
     });
@@ -67,6 +66,7 @@ athinoramaControllers.controller('HotelMapCtrl',['$scope', '$routeParams', '$htt
         str = data;
         str = str.substring(77, str.length - 10);
         $scope.hotel = JSON.parse(str);
+        console.log($scope.hotel);
         $scope.hotel.Longitude = $scope.hotel.Longitude.replace(",", ".");
         $scope.hotel.Latitude = $scope.hotel.Latitude.replace(",", ".");
         $scope.hotel.Longitude = parseFloat($scope.hotel.Longitude);
@@ -112,7 +112,7 @@ athinoramaControllers.controller('HotelMapCtrl',['$scope', '$routeParams', '$htt
                 });
             });
 
-        };
+        }
 
     });
 
